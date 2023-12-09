@@ -8,6 +8,9 @@ echo $NDK_PATH
 echo $HOST_PLATFORM
 echo $ENABLED_DECODERS
 
+HOST_PLATFORM="linux-x86_64"
+ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
+
 git clone --depth=1 -b release https://github.com/androidx/media.git
 
 cd "${FFMPEG_MODULE_PATH}/jni"
@@ -42,7 +45,7 @@ for decoder in "${ENABLED_DECODERS[@]}"
 do
     COMMON_OPTIONS="${COMMON_OPTIONS} --enable-decoder=${decoder}"
 done
-cd "${FFMPEG_MODULE_PATH}/jni/ffmpeg"
+cd "${FFMPEG_MODULE_PATH}/ffmpeg"
 ./configure \
     --libdir=android-libs/armeabi-v7a \
     --arch=arm \
