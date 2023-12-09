@@ -16,6 +16,7 @@ cd "${FFMPEG_MODULE_PATH}/jni"
 git clone --depth=1 -b release/4.2  git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
 FFMPEG_PATH="$(pwd)"
+pwd
 #chmod +x ./build_ffmpeg.sh
 #./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"
 
@@ -44,7 +45,7 @@ for decoder in "${ENABLED_DECODERS[@]}"
 do
     COMMON_OPTIONS="${COMMON_OPTIONS} --enable-decoder=${decoder}"
 done
-cd "${FFMPEG_MODULE_PATH}/ffmpeg"
+cd "${FFMPEG_PATH}"
 ./configure \
     --libdir=android-libs/armeabi-v7a \
     --arch=arm \
