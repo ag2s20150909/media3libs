@@ -7,7 +7,7 @@ echo $NDK_PATH
 
 git clone --depth=1 -b release  https://github.com/androidx/media
 cd media
-MEDIA3_PATH="$(pwd)
+MEDIA3_PATH="$(pwd)"
 
 
 HOST_PLATFORM="linux-x86_64"
