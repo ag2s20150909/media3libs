@@ -19,7 +19,7 @@ git clone --depth=1 https://chromium.googlesource.com/codecs/libgav1
 cd "${AV1_MODULE_PATH}/jni/libgav1" && \
 git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp
 
-cat "${AV1_MODULE_PATH}/build.gradle"
+cat "${AV1_MODULE_PATH}/../build.gradle"
 
 echo "
 android {
@@ -36,6 +36,6 @@ ext {
      releaseName = 'Media3 av1 module'
      }
      apply from: '../../publish.gradle'
-">>"${AV1_MODULE_PATH}/build.gradle"
+">>"${AV1_MODULE_PATH}/../build.gradle"
 
-cat "${AV1_MODULE_PATH}/build.gradle"
+cat "${AV1_MODULE_PATH}/../build.gradle"
