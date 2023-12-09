@@ -25,7 +25,7 @@ jobs:
       # Checks-out Media3
       - uses: actions/checkout@v4
         with:
-          name: androidx/media 
+          repository: androidx/media 
           ref: refs/heads/release
           fetch-depth: 1
       # Set Up NDK
