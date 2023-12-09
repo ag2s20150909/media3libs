@@ -44,31 +44,17 @@ jobs:
       - name: Build FFmpeg
         env:
           ANDROID_NDK_HOME: ${{steps.setup-ndk.outputs.ndk-path }}
-          FFMPEG_MODULE_PATH: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/src/main
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: |
          set eux
          source ${{ github.workspace }}/.github/scripts/build-ffmpeg.sh
         
 
-      # Build FFmpeg aar
-      - uses: actions/setup-java@v3
-        with:
-          distribution: temurin
-          java-version: 17
-    
-      - name: Set up Gradle
-        uses: gradle/gradle-build-action@v2
 
-      
-      - name: Build aar
-        working-directory: ${{ github.workspace }}/media
-        run: |
-          gradle :lib-decoder-ffmpeg build
 
       # Runs a set of commands using the runners shell
-      - name: Upload App To Artifact
+      - name: Upload FFmpeg Static Libs
         uses: actions/upload-artifact@v3
         with:
           name: "ffmpeg"
-          path: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/build/outputs
+          path: ${{ github.workspace }}/ffmpeg/android-libs
