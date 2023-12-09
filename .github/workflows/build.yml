@@ -52,8 +52,8 @@ jobs:
             git checkout release/4.2
             FFMPEG_PATH="$(pwd)"
             cd "${FFMPEG_MODULE_PATH}/jni"
-            chmod +x /build_ffmpeg.sh
-            /build_ffmpeg.sh
+            chmod +x ./build_ffmpeg.sh
+            ./build_ffmpeg.sh
          
   
 
