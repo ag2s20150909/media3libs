@@ -6,8 +6,9 @@ echo $ANDROID_NDK_HOME
 echo $NDK_PATH
 
 FFMPEG_MODULE_PATH="${MEDIA3_PATH}/libraries/decoder_ffmpeg/src/main"
+GD_PATH="${MEDIA3_PATH}/libraries/decoder_ffmpeg/build.gradle"
 
-cat "${FFMPEG_MODULE_PATH}/../build.gradle"
+cat "${GD_PATH}"
 
 echo "
 android {
@@ -24,9 +25,9 @@ ext {
      releaseName = 'Media3 ffmpeg module'
      }
      apply from: '../../publish.gradle'
-">>"${FFMPEG_MODULE_PATH}/../build.gradle"
+">>"${GD_PATH}"
 
-cat "${FFMPEG_MODULE_PATH}/../build.gradle"
+cat "${GD_PATH}"
 
 
 

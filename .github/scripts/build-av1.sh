@@ -5,6 +5,7 @@ echo "Build AV1"
 
 
 AV1_MODULE_PATH="${MEDIA3_PATH}/libraries/decoder_av1/src/main"
+GD_PATH="${MEDIA3_PATH}/libraries/decoder_av1/build.gradle"
 
 #Fetch cpu_features library:
 
@@ -19,7 +20,7 @@ git clone --depth=1 https://chromium.googlesource.com/codecs/libgav1
 cd "${AV1_MODULE_PATH}/jni/libgav1" && \
 git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp
 
-cat "${AV1_MODULE_PATH}/../build.gradle"
+cat "${GD_PATH}"
 
 echo "
 android {
@@ -36,6 +37,6 @@ ext {
      releaseName = 'Media3 av1 module'
      }
      apply from: '../../publish.gradle'
-">>"${AV1_MODULE_PATH}/../build.gradle"
+">>"${GD_PATH}"
 
-cat "${AV1_MODULE_PATH}/../build.gradle"
+cat "${GD_PATH}"
