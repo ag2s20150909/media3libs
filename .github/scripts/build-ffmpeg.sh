@@ -5,8 +5,7 @@ echo "Build FFmpeg"
 echo $ANDROID_NDK_HOME
 echo $FFMPEG_MODULE_PATH
 echo $NDK_PATH
-echo $HOST_PLATFORM
-echo $ENABLED_DECODERS
+
 
 HOST_PLATFORM="linux-x86_64"
 ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
