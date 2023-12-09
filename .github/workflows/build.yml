@@ -34,12 +34,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
       
-      # # Checks-out Media3
-      # - uses: actions/checkout@v4
-      #   with:
-      #     repository: androidx/media 
-      #     ref: refs/heads/release
-      #     fetch-depth: 1
+   
       # Set up NDK
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
@@ -74,3 +69,18 @@ jobs:
         with:
           name: aar-library
           path: ~/.m2
+
+      - name: Push to Repo
+        working-directory: ~/.m2
+        run: |
+         cd ~/.m2
+         git init
+         git config --local user.email "github-action@users.noreply.github.com"
+         git config --local user.name "GitHub Action"
+         git remote add origin https://github-action:$GITHUB_TOKEN@github.com/ag2s20150909/media3libs.git
+         git branch -M repo
+         git add .
+         git commit -m "Update library"
+         git push -f origin repo
+
+       
