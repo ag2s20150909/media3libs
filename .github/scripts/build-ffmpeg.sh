@@ -9,6 +9,9 @@ git clone --depth=1 -b release  https://github.com/androidx/media
 cd media
 MEDIA3_PATH="$(pwd)"
 
+echo "\n ext {\n releaseArtifactId = 'media3-decode-ffmpeg'\n releaseName = 'Media3 ffmpeg module'\n}\n apply from: '../../publish.gradle'">>libraries/decoder_ffmpeg/src/main/jni
+
+
 
 HOST_PLATFORM="linux-x86_64"
 ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
