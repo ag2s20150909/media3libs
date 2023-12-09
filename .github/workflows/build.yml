@@ -63,7 +63,7 @@ jobs:
          echo
          cd "${FFMPEG_MODULE_PATH}/jni"
          chmod +x ./build_ffmpeg.sh
-         ./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"
+         source ./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"
         
 
       # Build FFmpeg aar
