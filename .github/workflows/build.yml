@@ -47,7 +47,7 @@ jobs:
           FFMPEG_MODULE_PATH: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/src/main
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
           HOST_PLATFORM: "linux-x86_64"
-          ENABLED_DECODERS: "(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)"
+          ENABLED_DECODERS: (vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
         run: |
          set eux
          source ${{ github.workspace }}/.github/scripts/build-ffmpeg.sh
