@@ -5,9 +5,15 @@ echo "Build FFmpeg"
 echo $ANDROID_NDK_HOME
 echo $NDK_PATH
 
+git clone --depth=1 -b release  https://github.com/androidx/media
+cd media
+MEDIA3_PATH="$(pwd)
+
 
 HOST_PLATFORM="linux-x86_64"
 ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
+
+cd ${MEDIA3_PATH}/libraries/decoder_ffmpeg/src/main/jni
 
 git clone --depth=1 -b release/4.2  git://source.ffmpeg.org/ffmpeg
 cd ffmpeg

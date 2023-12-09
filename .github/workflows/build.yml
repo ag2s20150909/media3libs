@@ -26,6 +26,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+  
+      - name: Set up Gradle
+        uses: gradle/gradle-build-action@v2
       
       # # Checks-out Media3
       # - uses: actions/checkout@v4
@@ -46,8 +53,10 @@ jobs:
           ANDROID_NDK_HOME: ${{steps.setup-ndk.outputs.ndk-path }}
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: |
-         set eux
+         echo "build ffmpeg"
          source ${{ github.workspace }}/.github/scripts/build-ffmpeg.sh
+         cd ${{ github.workspace }}/media
+         ./gradlew publishToMavenLocal
         
 
 
@@ -57,4 +66,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "ffmpeg"
-          path: ${{ github.workspace }}/ffmpeg/android-libs
+          path: ${{ github.workspace }}/libraries/decoder_ffmpeg/src/main/jni/ffmpeg/android-libs
+
+      - name: Upload library
+        uses: actions/upload-artifact@v3
+        with:
+          name: aar-library
+          path: ~/.m2
