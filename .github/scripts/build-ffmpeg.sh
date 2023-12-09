@@ -12,6 +12,15 @@ MEDIA3_PATH="$(pwd)"
 cat libraries/decoder_ffmpeg/build.gradle
 
 echo "
+android {
+    namespace 'androidx.media3.decoder.ffmpeg'
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
+}
 ext {
      releaseArtifactId = 'media3-decode-ffmpeg'
      releaseName = 'Media3 ffmpeg module'
