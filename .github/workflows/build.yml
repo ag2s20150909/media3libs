@@ -50,7 +50,7 @@ jobs:
           ENABLED_DECODERS: "(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)"
         run: |
          echo "Build FFmpeg"
-         source .github/scripts/build_ffmpeg.sh
+         source .github/scripts/build-ffmpeg.sh
          echo "build finished"
 
       # Build FFmpeg aar
