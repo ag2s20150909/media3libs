@@ -8,10 +8,11 @@ echo $NDK_PATH
 echo $HOST_PLATFORM
 echo $ENABLED_DECODERS
 
+git clone --depth=1 -b release https://github.com/androidx/media.git
+
 cd "${FFMPEG_MODULE_PATH}/jni"
-git clone git://source.ffmpeg.org/ffmpeg
+git clone --depth=1 -b release/4.2  git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
-git checkout release/4.2
 FFMPEG_PATH="$(pwd)"
 #chmod +x ./build_ffmpeg.sh
 #./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"

@@ -27,12 +27,12 @@ jobs:
         with:
           fetch-depth: 1
       
-      # Checks-out Media3
-      - uses: actions/checkout@v4
-        with:
-          repository: androidx/media 
-          ref: refs/heads/release
-          fetch-depth: 1
+      # # Checks-out Media3
+      # - uses: actions/checkout@v4
+      #   with:
+      #     repository: androidx/media 
+      #     ref: refs/heads/release
+      #     fetch-depth: 1
       # Set up NDK
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
