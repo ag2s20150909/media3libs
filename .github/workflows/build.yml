@@ -50,8 +50,21 @@ jobs:
           ENABLED_DECODERS: "(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)"
         run: |
          echo "Build FFmpeg"
-         source .github/scripts/build-ffmpeg.sh
-         echo "build finished"
+         echo $ANDROID_NDK_HOME
+         echo $FFMPEG_MODULE_PATH
+         echo $NDK_PATH
+         echo $HOST_PLATFORM
+         echo $ENABLED_DECODERS
+         cd "${FFMPEG_MODULE_PATH}/jni"
+         git clone git://source.ffmpeg.org/ffmpeg
+         cd ffmpeg
+         git checkout release/4.2
+         FFMPEG_PATH="$(pwd)"
+         echo
+         cd "${FFMPEG_MODULE_PATH}/jni"
+         chmod +x ./build_ffmpeg.sh
+         ./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"
+        
 
       # Build FFmpeg aar
       - uses: actions/setup-java@v3
