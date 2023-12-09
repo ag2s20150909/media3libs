@@ -5,11 +5,9 @@ echo "Build FFmpeg"
 echo $ANDROID_NDK_HOME
 echo $NDK_PATH
 
-git clone --depth=1 -b release  https://github.com/androidx/media
-cd media
-MEDIA3_PATH="$(pwd)"
+FFMPEG_MODULE_PATH="${MEDIA3_PATH}/libraries/decoder_ffmpeg/src/main"
 
-cat libraries/decoder_ffmpeg/build.gradle
+cat "${FFMPEG_MODULE_PATH}/build.gradle"
 
 echo "
 android {
@@ -26,25 +24,21 @@ ext {
      releaseName = 'Media3 ffmpeg module'
      }
      apply from: '../../publish.gradle'
-">>libraries/decoder_ffmpeg/build.gradle
+">>"${FFMPEG_MODULE_PATH}/build.gradle"
 
-cat libraries/decoder_ffmpeg/build.gradle
+cat "${FFMPEG_MODULE_PATH}/build.gradle"
 
 
 
 HOST_PLATFORM="linux-x86_64"
 ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
 
-cd ${MEDIA3_PATH}/libraries/decoder_ffmpeg/src/main/jni
+cd "${FFMPEG_MODULE_PATH}/jni"
 
 git clone --depth=1 -b release/4.2  git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
 FFMPEG_PATH="$(pwd)"
 pwd
-#chmod +x ./build_ffmpeg.sh
-#./build_ffmpeg.sh "${FFMPEG_MODULE_PATH}" "${NDK_PATH}" "${HOST_PLATFORM}" "${ENABLED_DECODERS[@]}"
-
-
 JOBS=$(nproc 2> /dev/null || sysctl -n hw.ncpu 2> /dev/null || echo 4)
 echo "Using $JOBS jobs for make"
 COMMON_OPTIONS="
