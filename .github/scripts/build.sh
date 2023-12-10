@@ -14,3 +14,8 @@ export MEDIA3_PATH="$(pwd)"
 
 ${ROOT_DIR}/.github/scripts/build-ffmpeg.sh
 ${ROOT_DIR}/.github/scripts/build-av1.sh
+cd ${MEDIA3_PATH}
+./gradlew publishToMavenLocal
+ cd ${ROOT_DIR}
+mkdir -p repo
+mv ~/.m2/* repo

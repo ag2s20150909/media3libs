@@ -53,9 +53,7 @@ jobs:
          source ${{ github.workspace }}/.github/scripts/build.sh
          cd ${{ github.workspace }}/media
          ./gradlew publishToMavenLocal
-         cd ${{ github.workspace }}
-         mkdir -p repo
-         mv ~/.m2 repo
+         echo "Build Success"
         
 
 
