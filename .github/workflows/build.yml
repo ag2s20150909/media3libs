@@ -53,6 +53,9 @@ jobs:
          source ${{ github.workspace }}/.github/scripts/build.sh
          cd ${{ github.workspace }}/media
          ./gradlew publishToMavenLocal
+         cd ${{ github.workspace }}
+         mkdir -p repo
+         mv ~/.m2 repo
         
 
 
@@ -69,12 +72,6 @@ jobs:
         with:
           name: aar-library
           path: ~/.m2
-
-      - name: copy to Dir
-        run: |
-         mkdir -p repo
-         mv ~/.m2 repo
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         continue-on-error: true
@@ -83,6 +80,8 @@ jobs:
           branch: repo
           delete-branch: true
           add-paths: |
+           *.aar
+           *.jar
            repo/**
         
 
