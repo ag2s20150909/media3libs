@@ -70,16 +70,20 @@ jobs:
           name: aar-library
           path: ~/.m2
 
-      - name: Push to Repo
+      - name: copy to Dir
         run: |
-         cd ~/.m2
-         git init
-         git checkout -b repo
-         git config --global user.name "github-actions[bot]"
-         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-         git add .
-         git commit -m "Update library"
-         git push -f origin repo
+         mkdir -p repo
+         mv ~/.m2 repo
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        continue-on-error: true
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: repo
+          delete-branch: true
+          add-paths: |
+           repo/**
+        
 
        
