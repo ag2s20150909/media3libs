@@ -76,10 +76,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: repo
+          base: main
           delete-branch: true
           add-paths: |
-           *.aar
-           *.jar
+           **.aar
+           **.jar
            repo/**
         
 
