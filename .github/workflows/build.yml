@@ -71,7 +71,6 @@ jobs:
           path: ~/.m2
 
       - name: Push to Repo
-        working-directory: ~/.m2
         run: |
          cd ~/.m2
          git init
