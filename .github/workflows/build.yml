@@ -76,7 +76,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: repo
-          base: main
+          commit-message: build aar 
+          title: Automated Build
+          body: This is an auto-generated PR .
           delete-branch: true
           add-paths: |
            **.aar
