@@ -21,4 +21,4 @@ cd ${MEDIA3_PATH}
 cd ${ROOT_DIR}
 mkdir -p repo
 mv ~/.m2/* repo
-ls
+git add repo/**
