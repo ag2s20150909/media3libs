@@ -25,3 +25,4 @@ mkdir -p repo
 mv ~/.m2/repository/* repo
 tree
 git add repo/**
+git commit -m "build aar"

@@ -26,6 +26,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
+#      - name: Checkout Media3
+#        uses: actions/checkout@v4
+#        with:
+#          repository: my-org/my-tools
+#          path: media
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -71,7 +78,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: aar-library
-          path: ~/.m2
+          path: repo
 
 
       - name: Push
