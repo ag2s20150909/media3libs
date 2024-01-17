@@ -27,11 +27,12 @@ jobs:
         with:
           fetch-depth: 1
 
-#      - name: Checkout Media3
-#        uses: actions/checkout@v4
-#        with:
-#          repository: my-org/my-tools
-#          path: media
+      - name: Checkout Media3
+        uses: actions/checkout@v4
+        with:
+          repository: androidx/media
+          ref: main/324e1be
+          path: media
 
       - uses: actions/setup-java@v4
         with:
