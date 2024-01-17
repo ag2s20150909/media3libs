@@ -1,0 +1,122 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-midi",
+    "version": "1.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.2.1.aar",
+          "url": "media3-exoplayer-midi-1.2.1.aar",
+          "size": 271312,
+          "sha512": "1a80f78cf7091086e7b5c700cdd21b382ad65dd0c8684e1380cffe712294820dbb18a56e6d0dd93b0f711e6b98ba097785ccfaa1cf1ecfb6725cd9c16ea29323",
+          "sha256": "d45ec4ea98847fa00aac111565242361c6d2e32b204278dc46a7d4fc6f11f5bf",
+          "sha1": "534a683b79adac5871bfcc9dceaad56d25e5a495",
+          "md5": "c109389e7a0997abd33f7f2eddc19292"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-extractor",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.github.philburk",
+          "module": "jsyn",
+          "version": {
+            "requires": "40a41092cbab558d7d410ec43d93bb1e4121e86a"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.2.1.aar",
+          "url": "media3-exoplayer-midi-1.2.1.aar",
+          "size": 271312,
+          "sha512": "1a80f78cf7091086e7b5c700cdd21b382ad65dd0c8684e1380cffe712294820dbb18a56e6d0dd93b0f711e6b98ba097785ccfaa1cf1ecfb6725cd9c16ea29323",
+          "sha256": "d45ec4ea98847fa00aac111565242361c6d2e32b204278dc46a7d4fc6f11f5bf",
+          "sha1": "534a683b79adac5871bfcc9dceaad56d25e5a495",
+          "md5": "c109389e7a0997abd33f7f2eddc19292"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.2.1-sources.jar",
+          "url": "media3-exoplayer-midi-1.2.1-sources.jar",
+          "size": 35390,
+          "sha512": "7f82048c4ebf6f658c98930a19fc25cb75acf21aa635eb7ee8d51dde3ecdb7e7312d3a7bbfc2d5f8e7d8d8bc6447eaab5949c374a7d44c9e652d8d86f4675556",
+          "sha256": "cc6ac0e1d22be80aaab398f21b6dc13ec63ba4a66138d0c2ba6cb980f47caadc",
+          "sha1": "3044ea4d2578bde8cce3b29a88c8cd744a14a4ab",
+          "md5": "23718b465d52acbd188f05e90263a52f"
+        }
+      ]
+    }
+  ]
+}

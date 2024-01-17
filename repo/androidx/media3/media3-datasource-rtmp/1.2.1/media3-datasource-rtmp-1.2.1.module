@@ -1,0 +1,108 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-datasource-rtmp",
+    "version": "1.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "media3-datasource-rtmp-1.2.1.aar",
+          "url": "media3-datasource-rtmp-1.2.1.aar",
+          "size": 4508,
+          "sha512": "69dd3d7575daf80445494d8822a6d3a4c2b22356a7e75c4160e4518cd95d14e1db53d0c1cee7b088dfd31890ef3df87cec037b2863fa1882d0b404b2864185f5",
+          "sha256": "f301e32a571d6b1f44abb55b3e8d2d710ba5532dafffc6237fef8ebab3fa6cae",
+          "sha1": "126e85b528caaa78e40eca58540b823ccfd40f0e",
+          "md5": "ea622a47b6fb3e78b897811b4bb597a2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "io.antmedia",
+          "module": "rtmp-client",
+          "version": {
+            "requires": "3.2.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-rtmp-1.2.1.aar",
+          "url": "media3-datasource-rtmp-1.2.1.aar",
+          "size": 4508,
+          "sha512": "69dd3d7575daf80445494d8822a6d3a4c2b22356a7e75c4160e4518cd95d14e1db53d0c1cee7b088dfd31890ef3df87cec037b2863fa1882d0b404b2864185f5",
+          "sha256": "f301e32a571d6b1f44abb55b3e8d2d710ba5532dafffc6237fef8ebab3fa6cae",
+          "sha1": "126e85b528caaa78e40eca58540b823ccfd40f0e",
+          "md5": "ea622a47b6fb3e78b897811b4bb597a2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-datasource-rtmp-1.2.1-sources.jar",
+          "url": "media3-datasource-rtmp-1.2.1-sources.jar",
+          "size": 4111,
+          "sha512": "f7442bba2900c9bed8bac97c15daf3c8e5889fd163e3553c015ff666f72e214ede1b62ecbabea69bccff3a1d7b8b3edc80a10b385e409c3d3ead8636e3af6158",
+          "sha256": "3c5f0ce85fe4c1703a930b19b8d8c5abb7504e810eb9657a901b7ad9a3c4ed80",
+          "sha1": "ccdbab843cf6a85b81effcfc0fc67a58c9440342",
+          "md5": "51c594166ec87d139f72dd4191ee64d7"
+        }
+      ]
+    }
+  ]
+}

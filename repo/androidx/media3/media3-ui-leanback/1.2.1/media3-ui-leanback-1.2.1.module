@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-ui-leanback",
+    "version": "1.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "media3-ui-leanback-1.2.1.aar",
+          "url": "media3-ui-leanback-1.2.1.aar",
+          "size": 16655,
+          "sha512": "7a817c0a63e97925e1e9c02f04625a94a779718c64e6a51772aea042d84a5c4ca088ef0ac94753008af8ae0b4388011b770c38a59aaff316926fd43a6d06883d",
+          "sha256": "13d10cc47424bfa9fd20949a14ca70bbe6b9ab13237712138c5ec455081a03c6",
+          "sha1": "79c20eed4b162cb8be521bfa4bb210aff466d811",
+          "md5": "300f79c857862c1b7acebb15e164ac0a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.leanback",
+          "module": "leanback",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-ui-leanback-1.2.1.aar",
+          "url": "media3-ui-leanback-1.2.1.aar",
+          "size": 16655,
+          "sha512": "7a817c0a63e97925e1e9c02f04625a94a779718c64e6a51772aea042d84a5c4ca088ef0ac94753008af8ae0b4388011b770c38a59aaff316926fd43a6d06883d",
+          "sha256": "13d10cc47424bfa9fd20949a14ca70bbe6b9ab13237712138c5ec455081a03c6",
+          "sha1": "79c20eed4b162cb8be521bfa4bb210aff466d811",
+          "md5": "300f79c857862c1b7acebb15e164ac0a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-ui-leanback-1.2.1-sources.jar",
+          "url": "media3-ui-leanback-1.2.1-sources.jar",
+          "size": 4769,
+          "sha512": "31e651c644bb1b7d7bfe6b2a7989e023a772319fb3c049899e02f37e936f3489c5052a083594e220b3e73eef36c08103f4c6c2bb504751ff0a7adbf9e482f461",
+          "sha256": "f633e00814d8f8e6c74c65123f475ea776e97b898c18ff4f36339fe9ef827306",
+          "sha1": "4001436beaa30daec47de5b80cd56ba7b4767caa",
+          "md5": "9d16f298d17844cd927ed47bbe25d076"
+        }
+      ]
+    }
+  ]
+}
