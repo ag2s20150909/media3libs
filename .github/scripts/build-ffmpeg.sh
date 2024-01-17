@@ -146,6 +146,3 @@ make clean
 make -j$JOBS
 make install-libs
 make clean
-
-
-ls -l
