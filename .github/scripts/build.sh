@@ -7,9 +7,9 @@ echo $NDK_PATH
 chmod +x ${ROOT_DIR}/.github/scripts/build-ffmpeg.sh
 chmod +x ${ROOT_DIR}/.github/scripts/build-av1.sh
 
-#git clone   https://github.com/androidx/media
 cd media
 #git checkout 324e1be
+git reset --hard 324e1be
 export MEDIA3_PATH="$(pwd)"
 
 
