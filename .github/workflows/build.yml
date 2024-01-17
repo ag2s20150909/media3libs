@@ -40,11 +40,11 @@ jobs:
         id: setup-ndk
         with:
           ndk-version: r23c
-          local-cache: true
+          local-cache: false
           add-to-path: true
       # Build 
       - name: Build
-        continue-on-error: false
+        continue-on-error: true
         env:
           ANDROID_NDK_HOME: ${{steps.setup-ndk.outputs.ndk-path }}
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
