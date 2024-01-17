@@ -23,6 +23,9 @@ cd ${MEDIA3_PATH}
 cd ${ROOT_DIR}
 mkdir -p repo
 mv ~/.m2/repository/* repo
-tree
+
+
+git config --local user.email "github-action@users.noreply.github.com"
+git config --local user.name "GitHub Action"
 git add repo/**
 git commit -m "build aar"
