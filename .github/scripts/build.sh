@@ -13,12 +13,12 @@ export MEDIA3_PATH="$(pwd)"
 
 
 ${ROOT_DIR}/.github/scripts/build-ffmpeg.sh
-git add media/libraries/decoder_ffmpeg/src/main/jni/**
+
 ${ROOT_DIR}/.github/scripts/build-av1.sh
 cd ${MEDIA3_PATH}
 ./gradlew publishToMavenLocal --info
 
-
+git add media/libraries/decoder_ffmpeg/src/main/jni/**
 cd ${ROOT_DIR}
 mkdir -p repo
 mv ~/.m2/repository/* repo
