@@ -31,19 +31,20 @@ jobs:
           distribution: temurin
           java-version: 17
   
-      - name: Set up Gradle
-        uses: gradle/gradle-build-action@v2
+      # - name: Set up Gradle
+      #   uses: gradle/gradle-build-action@v2
       
    
       # Set up NDK
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
-          ndk-version: r21e
+          ndk-version: r23c
           local-cache: true
           add-to-path: true
-      # Build FFmpeg
-      - name: Build FFmpeg
+      # Build 
+      - name: Build
+        continue-on-error: true
         env:
           ANDROID_NDK_HOME: ${{steps.setup-ndk.outputs.ndk-path }}
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -51,8 +52,6 @@ jobs:
         run: |
          echo "build ffmpeg"
          source ${{ github.workspace }}/.github/scripts/build.sh
-         cd ${{ github.workspace }}/media
-         ./gradlew publishToMavenLocal
          
          echo "Build Success"
         
@@ -61,30 +60,28 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Upload FFmpeg Static Libs
+        continue-on-error: true
         uses: actions/upload-artifact@v3
         with:
           name: "ffmpeg"
           path: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/src/main/jni/ffmpeg/android-libs
 
       - name: Upload library
+        continue-on-error: true
         uses: actions/upload-artifact@v3
         with:
           name: aar-library
           path: ~/.m2
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        continue-on-error: true
+
+
+      - name: Push
+        uses: ad-m/github-push-action@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: repo
-          commit-message: build aar 
-          title: Automated Build
-          body: This is an auto-generated PR .
-          delete-branch: true
-          add-paths: |
-           **.aar
-           **.jar
-           repo/**
+          force: true
+          tags: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'repo'
+
         
 
        
