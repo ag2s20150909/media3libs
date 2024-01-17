@@ -16,7 +16,7 @@ ${ROOT_DIR}/.github/scripts/build-ffmpeg.sh
 
 ${ROOT_DIR}/.github/scripts/build-av1.sh
 cd ${MEDIA3_PATH}
-./gradlew publishToMavenLocal --info
+./gradlew publishToMavenLocal
 
 git add media/libraries/decoder_ffmpeg/src/main/jni/**
 cd ${ROOT_DIR}

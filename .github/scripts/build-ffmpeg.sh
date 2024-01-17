@@ -26,7 +26,7 @@ ext {
 echo "Build FFmpeg"
 echo $ANDROID_NDK_HOME
 echo $NDK_PATH
-ANDROID_ABI=16
+ANDROID_ABI=19
 HOST_PLATFORM="linux-x86_64"
 ENABLED_DECODERS=(vorbis opus flac alac pcm_mulaw pcm_alaw mp3 aac ac3 eac3 dca mlp truehd)
 
@@ -146,3 +146,6 @@ make clean
 make -j$JOBS
 make install-libs
 make clean
+
+
+ls -l

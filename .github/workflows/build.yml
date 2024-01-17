@@ -44,7 +44,7 @@ jobs:
           add-to-path: true
       # Build 
       - name: Build
-        continue-on-error: true
+        continue-on-error: false
         env:
           ANDROID_NDK_HOME: ${{steps.setup-ndk.outputs.ndk-path }}
           NDK_PATH: ${{ steps.setup-ndk.outputs.ndk-path }}
