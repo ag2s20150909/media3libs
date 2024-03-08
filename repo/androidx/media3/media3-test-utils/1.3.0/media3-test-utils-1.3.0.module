@@ -1,0 +1,201 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-test-utils",
+    "version": "1.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "3.12.4"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "junit",
+          "version": {
+            "requires": "1.1.5"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "truth",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13.2"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "com.google.truth.extensions",
+          "module": "truth-java8-extension",
+          "version": {
+            "requires": "1.1.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-1.3.0.aar",
+          "url": "media3-test-utils-1.3.0.aar",
+          "size": 345278,
+          "sha512": "3a4689a7efe05bd00847d06d73256a560c7de3b0273314aabdf1f84742c7c4bbe1ed1c3c0b94446cd15980dbf54ede971a43ff3cb6e68c8fc008f6956c29d98d",
+          "sha256": "4510d184e528db8c2ac91732eb9fd415d41d0a8d06e0fbf5d226ee9bc58720ac",
+          "sha1": "4e62acd8840b37bd4ea66dd8d513793d6b737246",
+          "md5": "93ba87c0de1fe0e96ea4df051ebb0754"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "mockwebserver",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "3.12.4"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "junit",
+          "version": {
+            "requires": "1.1.5"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "truth",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13.2"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "com.google.truth.extensions",
+          "module": "truth-java8-extension",
+          "version": {
+            "requires": "1.1.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-1.3.0.aar",
+          "url": "media3-test-utils-1.3.0.aar",
+          "size": 345278,
+          "sha512": "3a4689a7efe05bd00847d06d73256a560c7de3b0273314aabdf1f84742c7c4bbe1ed1c3c0b94446cd15980dbf54ede971a43ff3cb6e68c8fc008f6956c29d98d",
+          "sha256": "4510d184e528db8c2ac91732eb9fd415d41d0a8d06e0fbf5d226ee9bc58720ac",
+          "sha1": "4e62acd8840b37bd4ea66dd8d513793d6b737246",
+          "md5": "93ba87c0de1fe0e96ea4df051ebb0754"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-test-utils-1.3.0-sources.jar",
+          "url": "media3-test-utils-1.3.0-sources.jar",
+          "size": 193497,
+          "sha512": "5bd51e4bf09d9e6f61b725796399f3efabd1f8799a604b90149226c05127ce6409c905f6b6a6a72e736c9c786f74a830ae665591c3f72b5de4a1bcc5e787b598",
+          "sha256": "d006f5ce3fe37255d5949eddb35b40c09d8d19ac92559b0a34ef5c7faca10368",
+          "sha1": "8110057ab44caf7c1b86977f7fb39e69d2fc321a",
+          "md5": "bc0a9f2da95f9e0e5e23aaa5b36feb86"
+        }
+      ]
+    }
+  ]
+}
