@@ -1,0 +1,117 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-datasource-okhttp",
+    "version": "1.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.3.1.aar",
+          "url": "media3-datasource-okhttp-1.3.1.aar",
+          "size": 11400,
+          "sha512": "9ec0eaaeb18fcee6a3235aef3df225d3f7f2b7749efc9e9207be99d207e3c42471db98c2fbc6aa55a010fcfc5c502d368e388682fa9f77ed042aaa1027f9cffd",
+          "sha256": "f4a578fd98dffdc2b4578421378ee4a61700ee250721595beb549ebbdb530d8f",
+          "sha1": "be6162056f22674228d582bbe8a35e0c7b72673c",
+          "md5": "68e03fba3d52e0abae405d3ef667e16a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.3.1.aar",
+          "url": "media3-datasource-okhttp-1.3.1.aar",
+          "size": 11400,
+          "sha512": "9ec0eaaeb18fcee6a3235aef3df225d3f7f2b7749efc9e9207be99d207e3c42471db98c2fbc6aa55a010fcfc5c502d368e388682fa9f77ed042aaa1027f9cffd",
+          "sha256": "f4a578fd98dffdc2b4578421378ee4a61700ee250721595beb549ebbdb530d8f",
+          "sha1": "be6162056f22674228d582bbe8a35e0c7b72673c",
+          "md5": "68e03fba3d52e0abae405d3ef667e16a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.3.1-sources.jar",
+          "url": "media3-datasource-okhttp-1.3.1-sources.jar",
+          "size": 8065,
+          "sha512": "ec1552521319a0e31f8ece90b3e4adf90561bc51636948b1b1a18118af29fedb51f64e01f281f86e8d47ff169020e6480175e6061dbccf27305ab29f303b3fa4",
+          "sha256": "2e3022c5b2449e4a5a542270ce4b84c643c084aaf32a2355c117430d948191ae",
+          "sha1": "434639c23d1c1a1437bf5fcf31a16256c3ec97a2",
+          "md5": "a6d0e268878a3974a231c4621063537d"
+        }
+      ]
+    }
+  ]
+}
