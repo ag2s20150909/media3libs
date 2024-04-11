@@ -69,14 +69,14 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Upload FFmpeg Static Libs
         continue-on-error: true
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "ffmpeg"
           path: ${{ github.workspace }}/media/libraries/decoder_ffmpeg/src/main/jni/ffmpeg/android-libs
 
       - name: Upload library
         continue-on-error: true
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: aar-library
           path: repo
