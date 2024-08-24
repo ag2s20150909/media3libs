@@ -1,0 +1,138 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-transformer",
+    "version": "1.4.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-transformer-1.4.0.aar",
+          "url": "media3-transformer-1.4.0.aar",
+          "size": 314755,
+          "sha512": "2cbd422c4690b1085ce5c42b216170ad81455b73bf6c6c136a914c087482300299d2c968667cc69ab25f0f6a14ddc6502f996545bdb94055218c43256ae27779",
+          "sha256": "631b644ef75eb6cae6e2fa1197abe2ac73764e5ec346223a71b46bb487a07b8b",
+          "sha1": "6bee8498ea726f5beda51559242916aa5103d061",
+          "md5": "d8814651191852830f09cffb83a177d7"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-container",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-muxer",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-transformer-1.4.0.aar",
+          "url": "media3-transformer-1.4.0.aar",
+          "size": 314755,
+          "sha512": "2cbd422c4690b1085ce5c42b216170ad81455b73bf6c6c136a914c087482300299d2c968667cc69ab25f0f6a14ddc6502f996545bdb94055218c43256ae27779",
+          "sha256": "631b644ef75eb6cae6e2fa1197abe2ac73764e5ec346223a71b46bb487a07b8b",
+          "sha1": "6bee8498ea726f5beda51559242916aa5103d061",
+          "md5": "d8814651191852830f09cffb83a177d7"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-transformer-1.4.0-sources.jar",
+          "url": "media3-transformer-1.4.0-sources.jar",
+          "size": 218210,
+          "sha512": "41d095f5442a2d465a17cac009dad8bd3012c640a0ba319739daf8bdadd49ce4bfdee252f8b579c2bfdaa41e2f6c8f4641ad28b444af2055c492ed32e2dde2a8",
+          "sha256": "0d8cb8f065dbc30179eecbe95c8886134d14a6e698f4dc8cc85a59273b19c5d7",
+          "sha1": "5c98731a249f9743b39c2f119b104e1a5f225d45",
+          "md5": "f537fa474cdd80a6bc778dd61701b36b"
+        }
+      ]
+    }
+  ]
+}
