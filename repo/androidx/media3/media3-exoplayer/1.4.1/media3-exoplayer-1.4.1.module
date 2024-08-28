@@ -1,0 +1,194 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer",
+    "version": "1.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-container",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-extractor",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-database",
+          "version": {
+            "requires": "1.4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-1.4.1.aar",
+          "url": "media3-exoplayer-1.4.1.aar",
+          "size": 1440873,
+          "sha512": "c0d1a53ffd1f6d16e2cbf8c382910b27cf9ca82fcb52c031f59fecd0efce5913a563d8ac35368a4339d10bb0a80b4000f780cc336863e589091cdeae26a74ca7",
+          "sha256": "66cd0f99209191660823d32c8fc329e383a8a7ff33e0d676632387361abcba70",
+          "sha1": "57c5d8d4a13e187c95186bfe7b82c7068a6b54e9",
+          "md5": "b5ccdd95f636639c1521a4bf230a9a67"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.collection",
+          "module": "collection",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.exifinterface",
+          "module": "exifinterface",
+          "version": {
+            "requires": "1.3.6"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-container",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-extractor",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-database",
+          "version": {
+            "requires": "1.4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-1.4.1.aar",
+          "url": "media3-exoplayer-1.4.1.aar",
+          "size": 1440873,
+          "sha512": "c0d1a53ffd1f6d16e2cbf8c382910b27cf9ca82fcb52c031f59fecd0efce5913a563d8ac35368a4339d10bb0a80b4000f780cc336863e589091cdeae26a74ca7",
+          "sha256": "66cd0f99209191660823d32c8fc329e383a8a7ff33e0d676632387361abcba70",
+          "sha1": "57c5d8d4a13e187c95186bfe7b82c7068a6b54e9",
+          "md5": "b5ccdd95f636639c1521a4bf230a9a67"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-1.4.1-sources.jar",
+          "url": "media3-exoplayer-1.4.1-sources.jar",
+          "size": 1046754,
+          "sha512": "802ea89c70b963989b83944ac10ed0cf54aa1f6fce038f8d2d601a9193db54afe169e5ce6e4137b8ce53f80342f9dd0cda9697753df628d491267ba8ec8b9b42",
+          "sha256": "7488386cb3da92d461c14437807ef95d14034f110b783c8b017705f694957852",
+          "sha1": "2ef726fbd9c405a2f4e6753454603329e0f1a731",
+          "md5": "4e638ef1edbf8867a10236071df6346c"
+        }
+      ]
+    }
+  ]
+}
