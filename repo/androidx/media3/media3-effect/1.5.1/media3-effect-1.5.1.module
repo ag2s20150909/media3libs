@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-effect",
+    "version": "1.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.5.1.aar",
+          "url": "media3-effect-1.5.1.aar",
+          "size": 252369,
+          "sha512": "273190548ef6d645a7396566fcdf60692267b60e62a0c53e034ebb77e0ae35f4301f0707e56fa65901f596e496aa35bb575dd6d347e52e069c24175e023dc280",
+          "sha256": "29ca94492cc7ae86b7817da3449e2c29504cd7fdd410a8603b74098260291955",
+          "sha1": "fea71684a7af13613e05b9196c8c377afc995aca",
+          "md5": "68f21bb016f5a21fec837c898143342a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.5.1.aar",
+          "url": "media3-effect-1.5.1.aar",
+          "size": 252369,
+          "sha512": "273190548ef6d645a7396566fcdf60692267b60e62a0c53e034ebb77e0ae35f4301f0707e56fa65901f596e496aa35bb575dd6d347e52e069c24175e023dc280",
+          "sha256": "29ca94492cc7ae86b7817da3449e2c29504cd7fdd410a8603b74098260291955",
+          "sha1": "fea71684a7af13613e05b9196c8c377afc995aca",
+          "md5": "68f21bb016f5a21fec837c898143342a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.5.1-sources.jar",
+          "url": "media3-effect-1.5.1-sources.jar",
+          "size": 179678,
+          "sha512": "7053d5e8983cf7e24134944b250a04061ec07b155ac4d11ee6cddc438b9094ae6ca29bf753aa8efa75d9910c9cd1ef179891df1564559dbf6cbde53ddf8c18ba",
+          "sha256": "8b739f8e63a0261b5468e02de7dce2090bb2cb05ef53812e764707406e34a986",
+          "sha1": "1f4bd9ceb25cfbbf0cdd41ac045991b498dcf50e",
+          "md5": "a4f50cceb6cef96c3727c3994a7c2217"
+        }
+      ]
+    }
+  ]
+}
