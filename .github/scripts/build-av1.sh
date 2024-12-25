@@ -20,8 +20,8 @@ git clone --depth=1 https://chromium.googlesource.com/codecs/libgav1
 cd "${AV1_MODULE_PATH}/jni/libgav1" && \
 git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp
 
-cat "${GD_PATH}"
 
+## Enable publishing
 echo "
 android {
     namespace 'androidx.media3.decoder.av1'
@@ -39,4 +39,3 @@ ext {
      apply from: '../../publish.gradle'
 ">>"${GD_PATH}"
 
-cat "${GD_PATH}"
