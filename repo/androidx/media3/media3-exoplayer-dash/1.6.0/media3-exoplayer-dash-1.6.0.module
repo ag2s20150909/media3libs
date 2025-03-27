@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-dash",
+    "version": "1.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-dash-1.6.0.aar",
+          "url": "media3-exoplayer-dash-1.6.0.aar",
+          "size": 141803,
+          "sha512": "5f23a44517291cf8a10882f459b177db29b2bb316ca4f8634c2819ad957ea38357e2892ba331e3df30f4a00785e03c6e995109c1297bc47221a594c4a3d3670f",
+          "sha256": "dc50540ba1c1d8f77deb179bd687d543945e59d527435c8231916671eff14df2",
+          "sha1": "33c3663ec3203ef4de7afc063018d05b5aed029b",
+          "md5": "770eda0627124ee0b4919749f687a733"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-dash-1.6.0.aar",
+          "url": "media3-exoplayer-dash-1.6.0.aar",
+          "size": 141803,
+          "sha512": "5f23a44517291cf8a10882f459b177db29b2bb316ca4f8634c2819ad957ea38357e2892ba331e3df30f4a00785e03c6e995109c1297bc47221a594c4a3d3670f",
+          "sha256": "dc50540ba1c1d8f77deb179bd687d543945e59d527435c8231916671eff14df2",
+          "sha1": "33c3663ec3203ef4de7afc063018d05b5aed029b",
+          "md5": "770eda0627124ee0b4919749f687a733"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-dash-1.6.0-sources.jar",
+          "url": "media3-exoplayer-dash-1.6.0-sources.jar",
+          "size": 95918,
+          "sha512": "d44dc4bc5fc0f94072ec162851cdfb590c576e85faffb5cadf9bd496d5c30f5430c198aa5af14f6f97b4fb4cf5d150a3df71a13f23b964877ebc7a1c96cecef4",
+          "sha256": "6a6e7c2cff50c10e0073a46838c8bc160797aa4d4f8fd74e8eb504d43feb48f0",
+          "sha1": "c03a744cb4a16e4e54fe1fbd4949184bfa395b42",
+          "md5": "0d1799472261132dbbc679f5ccc0c6c9"
+        }
+      ]
+    }
+  ]
+}
