@@ -1,0 +1,229 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-test-utils",
+    "version": "1.8.0-rc01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "3.12.4"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "junit",
+          "version": {
+            "requires": "1.1.5"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "truth",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13.2"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.google.truth.extensions",
+          "module": "truth-java8-extension",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "mockwebserver",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.8.0-rc01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.8.0-rc01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-1.8.0-rc01.aar",
+          "url": "media3-test-utils-1.8.0-rc01.aar",
+          "size": 384575,
+          "sha512": "75a709e0b7f569761182002871d33532096ece03a7bd476e2fe7ba7e8426cec456b9a7936fdc3e81ad3f83981c4126e158fbc8bbb8602745cb47b16017805f35",
+          "sha256": "a70994370c66542be393e735745cb78589415b5ae18a27474c8ed0907ccce91a",
+          "sha1": "a3a7ce0b71e3fe1f3b0db695a322a6ba7ce880a5",
+          "md5": "81ac49048b37792a1b5652b406a87d1c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "3.12.4"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "junit",
+          "version": {
+            "requires": "1.1.5"
+          }
+        },
+        {
+          "group": "androidx.test.ext",
+          "module": "truth",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13.2"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.google.truth.extensions",
+          "module": "truth-java8-extension",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "mockwebserver",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.8.0-rc01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.8.0-rc01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-1.8.0-rc01.aar",
+          "url": "media3-test-utils-1.8.0-rc01.aar",
+          "size": 384575,
+          "sha512": "75a709e0b7f569761182002871d33532096ece03a7bd476e2fe7ba7e8426cec456b9a7936fdc3e81ad3f83981c4126e158fbc8bbb8602745cb47b16017805f35",
+          "sha256": "a70994370c66542be393e735745cb78589415b5ae18a27474c8ed0907ccce91a",
+          "sha1": "a3a7ce0b71e3fe1f3b0db695a322a6ba7ce880a5",
+          "md5": "81ac49048b37792a1b5652b406a87d1c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-test-utils-1.8.0-rc01-sources.jar",
+          "url": "media3-test-utils-1.8.0-rc01-sources.jar",
+          "size": 215625,
+          "sha512": "9752d070182e48dbe55db6b33c252cb12e02b0e5173927558a3600cefbc490ac2dd0eeb8b53813c82aaa165342da281bb87bfb0736623e181cecc823f6170443",
+          "sha256": "eea1eaeb6667766f8b51f62769205e5dd0439a489c26fb8bd8c0b857c46a67a4",
+          "sha1": "b7a1ad9c49695c542f1db1928492afaddab1a9bd",
+          "md5": "0e626eecc62fcd8384b0c58f9cb7ec21"
+        }
+      ]
+    }
+  ]
+}
