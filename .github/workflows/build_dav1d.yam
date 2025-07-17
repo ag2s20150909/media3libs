@@ -1,0 +1,78 @@
+name: Build dav1d
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: ilammy/setup-nasm@v1
+      - name: Install Meson
+        run: pip3 install --user meson
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          repository: videolan/dav1d
+          ref: master
+          path: dav1d
+
+      - name: Build dav1d
+        run: | 
+            
+            export PATH="${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH"
+            ROOT_PATH="$(pwd)"
+            CROSS_FILE_PRE="$(pwd)/dav1d/package/crossfiles"
+            sed -i  's/android19/android21/g'  "$(pwd)/dav1d/package/crossfiles/x86-android.meson"
+            mkdir build
+            cd build
+            echo $PATH
+
+            
+
+            mkdir arm64-v8a
+            cd arm64-v8a
+            meson setup ${ROOT_PATH}/dav1d --cross-file="${CROSS_FILE_PRE}/aarch64-android.meson" --default-library=static && ninja
+            cd ..
+           
+            mkdir armeabi-v7a
+            cd armeabi-v7a
+            meson setup ${ROOT_PATH}/dav1d --cross-file="${CROSS_FILE_PRE}/arm-android.meson" --default-library=static && ninja
+            cd ..
+
+            mkdir x86
+            cd x86
+            meson setup ${ROOT_PATH}/dav1d --cross-file="${CROSS_FILE_PRE}/x86-android.meson" --default-library=static && ninja
+            cd ..
+
+            mkdir x86_64
+            cd x86_64
+            meson setup ${ROOT_PATH}/dav1d --cross-file="${CROSS_FILE_PRE}/x86_64-android.meson" --default-library=static && ninja
+            cd ..
+
+            
+            
+            
+      - name: Upload library
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: libdav1d-static
+          path: |
+              build/arm64-v8a/src/libdav1d.a
+              build/armeabi-v7a/src/libdav1d.a
+              build/x86/src/libdav1d.a
+              build/x86_64/src/libdav1d.a
