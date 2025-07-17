@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: androidx/media
-          ref: release
+          ref: release-1.8.0-rc01
           path: media
 
       - uses: actions/setup-java@v4
@@ -47,7 +47,7 @@ jobs:
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
-          ndk-version: r23c
+          ndk-version: r27d
           local-cache: false
           add-to-path: true
       # Build 
