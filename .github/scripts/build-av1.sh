@@ -18,7 +18,7 @@ git clone --depth=1 https://chromium.googlesource.com/codecs/libgav1
 
 #Fetch Abseil:
 cd "${AV1_MODULE_PATH}/jni/libgav1" && \
-git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp
+git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp -b 20250512.0
 
 
 ## Enable publishing
