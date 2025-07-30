@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-datasource-cronet",
+    "version": "1.8.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cronet",
+          "version": {
+            "requires": "18.0.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-cronet-1.8.0.aar",
+          "url": "media3-datasource-cronet-1.8.0.aar",
+          "size": 24003,
+          "sha512": "69dc05859b84118adbd68f499c53af5ccb5a4fa4b0002c161cdad935c07135d3ee253032cb32eca323326ca03ef1f57c0e738d92a233ba468559c6929eba8189",
+          "sha256": "92dda09b4b8352b9075464c6f3cfd31acf3e00e6d969f5cc5de536b6e494ac8b",
+          "sha1": "f2b0ca968f9a081db5410bc406040b6a8b4638ff",
+          "md5": "7c848d4315b5b34b9186f5aa05f46be0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cronet",
+          "version": {
+            "requires": "18.0.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-cronet-1.8.0.aar",
+          "url": "media3-datasource-cronet-1.8.0.aar",
+          "size": 24003,
+          "sha512": "69dc05859b84118adbd68f499c53af5ccb5a4fa4b0002c161cdad935c07135d3ee253032cb32eca323326ca03ef1f57c0e738d92a233ba468559c6929eba8189",
+          "sha256": "92dda09b4b8352b9075464c6f3cfd31acf3e00e6d969f5cc5de536b6e494ac8b",
+          "sha1": "f2b0ca968f9a081db5410bc406040b6a8b4638ff",
+          "md5": "7c848d4315b5b34b9186f5aa05f46be0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-datasource-cronet-1.8.0-sources.jar",
+          "url": "media3-datasource-cronet-1.8.0-sources.jar",
+          "size": 16784,
+          "sha512": "5ee49154a291aa8b1e5d058bda6b65b3391f1aa85dc8658dc47057295538ec5e7d63bafce4e47c39b798077e4b94d190cb4d4a55a160434bc44215eeec82d637",
+          "sha256": "503e7d864ace2184ca615babbc5e798b86174b51026814020d213f1de7c048ab",
+          "sha1": "a06fe22b6026dca770705fb15341e2f7196c99ea",
+          "md5": "ecdbedf5da15e8cc4c1ec45a1733076e"
+        }
+      ]
+    }
+  ]
+}

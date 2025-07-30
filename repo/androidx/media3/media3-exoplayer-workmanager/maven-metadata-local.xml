@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>androidx.media3</groupId>
+  <artifactId>media3-exoplayer-workmanager</artifactId>
+  <versioning>
+    <latest>1.8.0</latest>
+    <release>1.8.0</release>
+    <versions>
+      <version>1.8.0</version>
+    </versions>
+    <lastUpdated>20250730222454</lastUpdated>
+  </versioning>
+</metadata>

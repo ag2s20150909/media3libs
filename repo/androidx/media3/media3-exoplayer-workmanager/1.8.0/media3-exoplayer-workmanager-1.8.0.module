@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-workmanager",
+    "version": "1.8.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-workmanager-1.8.0.aar",
+          "url": "media3-exoplayer-workmanager-1.8.0.aar",
+          "size": 7065,
+          "sha512": "d37e49e35ea69e7d342a096ff49b012527e9a3f0ce8be16d8ee45ca8a1c5a8b62c0c04f34ef225d4cc3c8d5336bbf546ba961ce5a859ac43b78f998d66c071ed",
+          "sha256": "0f2723802149ebdd66661827db8ad80d41d1c4c0f266d78a4698f8676bc3a44c",
+          "sha1": "645281736ee9692819ce3b0f759fa72ba73db279",
+          "md5": "d6e09d267562efcf220aa29695c992a3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.work",
+          "module": "work-runtime",
+          "version": {
+            "requires": "2.8.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-workmanager-1.8.0.aar",
+          "url": "media3-exoplayer-workmanager-1.8.0.aar",
+          "size": 7065,
+          "sha512": "d37e49e35ea69e7d342a096ff49b012527e9a3f0ce8be16d8ee45ca8a1c5a8b62c0c04f34ef225d4cc3c8d5336bbf546ba961ce5a859ac43b78f998d66c071ed",
+          "sha256": "0f2723802149ebdd66661827db8ad80d41d1c4c0f266d78a4698f8676bc3a44c",
+          "sha1": "645281736ee9692819ce3b0f759fa72ba73db279",
+          "md5": "d6e09d267562efcf220aa29695c992a3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-workmanager-1.8.0-sources.jar",
+          "url": "media3-exoplayer-workmanager-1.8.0-sources.jar",
+          "size": 3603,
+          "sha512": "a84afe1325fc6e50b2067aea4d944c5a17b96893300c711076c7bbe91fb87340be8c3dd4fdc85223a7990be41fd1fa04bc345021d60516b74d2883afd9d82237",
+          "sha256": "0fa7e25d53e5e038de29c147ff16ebe1a6d90f837b9d48889fc82644d6975cba",
+          "sha1": "90e4bb64fc76f600221189677b883dd9a881df24",
+          "md5": "9b43b2e5bc860d6d1c47b1bb07c25575"
+        }
+      ]
+    }
+  ]
+}
