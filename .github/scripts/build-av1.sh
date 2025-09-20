@@ -14,11 +14,18 @@ git clone --depth=1 https://github.com/google/cpu_features
 
 #Fetch libgav1:
 cd "${AV1_MODULE_PATH}/jni"
-git clone --depth=1 https://chromium.googlesource.com/codecs/libgav1
+git clone --depth=1 https://code.videolan.org/videolan/dav1d.git
 
-#Fetch Abseil:
-cd "${AV1_MODULE_PATH}/jni/libgav1" && \
-git clone https://github.com/abseil/abseil-cpp.git third_party/abseil-cpp -b 20250512.0
+cd "${AV1_MODULE_PATH}/jni"
+
+HOST_PLATFORM="linux-x86_64"
+
+./build_dav1d.sh \
+  "${AV1_MODULE_PATH}" \
+  "${NDK_PATH}" \
+  "${HOST_PLATFORM}"
+
+
 
 
 ## Enable publishing
