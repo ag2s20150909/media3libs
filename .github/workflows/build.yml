@@ -4,14 +4,21 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # # Triggers the workflow on push or pull request events but only for the "main" branch
+  # workflow_dispatch: # allows manual triggering
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'media3 branch or tag'
+        default: 'release'
+        required: true
+        type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -31,16 +38,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: androidx/media
-          ref: release
+          ref: ${{ inputs.ref }}
           path: media
+          fetch-depth: 1
 
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
   
-      # - name: Set up Gradle
-      #   uses: gradle/gradle-build-action@v2
+      - uses: ilammy/setup-nasm@v1
+      - name: Install Meson
+        run: pip3 install --user meson
       
    
       # Set up NDK
