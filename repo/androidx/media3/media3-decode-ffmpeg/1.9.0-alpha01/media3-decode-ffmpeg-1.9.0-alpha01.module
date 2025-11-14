@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-decode-ffmpeg",
+    "version": "1.9.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-ffmpeg-1.9.0-alpha01.aar",
+          "url": "media3-decode-ffmpeg-1.9.0-alpha01.aar",
+          "size": 3342969,
+          "sha512": "333de55208eccd1c773c311f9e769548087128141f2ae045d94294d1aadbc9a50ec9b84a2a411f1cee5dd51d4a8c9953b6eaed311ccfd85b7c453cb87da500b3",
+          "sha256": "d9264ea88d82c5e89885e1a0d13b15e0a7bd4dc40418827790bda62c74768237",
+          "sha1": "bf69b54f7dccfb5294500e087a3765c8e27ae7e2",
+          "md5": "5b17dd4204710168df3c716606943d02"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-ffmpeg-1.9.0-alpha01.aar",
+          "url": "media3-decode-ffmpeg-1.9.0-alpha01.aar",
+          "size": 3342969,
+          "sha512": "333de55208eccd1c773c311f9e769548087128141f2ae045d94294d1aadbc9a50ec9b84a2a411f1cee5dd51d4a8c9953b6eaed311ccfd85b7c453cb87da500b3",
+          "sha256": "d9264ea88d82c5e89885e1a0d13b15e0a7bd4dc40418827790bda62c74768237",
+          "sha1": "bf69b54f7dccfb5294500e087a3765c8e27ae7e2",
+          "md5": "5b17dd4204710168df3c716606943d02"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-decode-ffmpeg-1.9.0-alpha01-sources.jar",
+          "url": "media3-decode-ffmpeg-1.9.0-alpha01-sources.jar",
+          "size": 11545,
+          "sha512": "3192077ddcd893faefa57371aa2f8e94205731da686054296b47632db3911c7ad65ba79c63bce8c05a223d8b7203386458c52386b1bf5eba175b20fe583a2cb3",
+          "sha256": "1b8e235bae4ec7a7e76108ce45f99e32b5296d0224819f99610979d31c6aa3e0",
+          "sha1": "31472bfa3a016c51879444d6385c84912b5d1c2b",
+          "md5": "9a3eddb0892f6e15728c92d329f35398"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-ui-compose",
+    "version": "1.9.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common-ktx",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.12.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.7.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-ui-compose-1.9.0-alpha01.aar",
+          "url": "media3-ui-compose-1.9.0-alpha01.aar",
+          "size": 160022,
+          "sha512": "5d48295bc1b4e3c83fd0d76ee99977acfcc2377c5d61b7761be4dafa8bf1f37fdbc2170fa1388c6e4260cd785b5f67ae1bcebee92a7f47b1c13d01a34c0f627a",
+          "sha256": "b61499c218bd7129dbe6419880ba98972eecf038c858aea352c4d06f34c17a02",
+          "sha1": "8c307015f40a6d7eacfd92f1af52d6b7d00c00a2",
+          "md5": "69267761f2c44fb44361988c72ca0b90"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common-ktx",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.12.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.7.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-ui-compose-1.9.0-alpha01.aar",
+          "url": "media3-ui-compose-1.9.0-alpha01.aar",
+          "size": 160022,
+          "sha512": "5d48295bc1b4e3c83fd0d76ee99977acfcc2377c5d61b7761be4dafa8bf1f37fdbc2170fa1388c6e4260cd785b5f67ae1bcebee92a7f47b1c13d01a34c0f627a",
+          "sha256": "b61499c218bd7129dbe6419880ba98972eecf038c858aea352c4d06f34c17a02",
+          "sha1": "8c307015f40a6d7eacfd92f1af52d6b7d00c00a2",
+          "md5": "69267761f2c44fb44361988c72ca0b90"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-ui-compose-1.9.0-alpha01-sources.jar",
+          "url": "media3-ui-compose-1.9.0-alpha01-sources.jar",
+          "size": 38517,
+          "sha512": "a7a0c1e01b3b4e258f51823557b204f27243450b79a3c6699651c2946a81b29f8d83adf017d2e0d8fc9f69f48daa4f0847ebba17dc6b5a7ee6097c4ac0c3790a",
+          "sha256": "683d97e89ef8a0d8399af1d0330369488b0e2e9fb75dca05df9fa577eb4a38d2",
+          "sha1": "e8244b92c33047b7b9af7b79f3e5f7cfab44097e",
+          "md5": "39add04056a9497eed1bacfc6fb8dcd8"
+        }
+      ]
+    }
+  ]
+}

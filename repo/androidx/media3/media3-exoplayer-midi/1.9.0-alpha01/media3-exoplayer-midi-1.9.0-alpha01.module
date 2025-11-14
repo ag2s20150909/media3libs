@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-midi",
+    "version": "1.9.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-extractor",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.9.0-alpha01.aar",
+          "url": "media3-exoplayer-midi-1.9.0-alpha01.aar",
+          "size": 270764,
+          "sha512": "bfdb4c166049cceca69377b16cbdfd482a94c0f353f502435cfa333afd43dab05c5913ad7065eddbc0c5e84d1671447c3bf08f2fa6be1c1621d13267a2ea5d03",
+          "sha256": "fcc01fd81a2871c89b31c274dafa7434285a1ba8f64c9fa731a605678811451e",
+          "sha1": "8fe4e7dfc13f3c322e4087b4ea1e50dbaca32122",
+          "md5": "015260f28a4cb10232f1c5fada75f9d2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.github.philburk",
+          "module": "jsyn",
+          "version": {
+            "requires": "3f6b44b853bccc0d2e3027104d575fcc5ccb6d4e"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-extractor",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.9.0-alpha01.aar",
+          "url": "media3-exoplayer-midi-1.9.0-alpha01.aar",
+          "size": 270764,
+          "sha512": "bfdb4c166049cceca69377b16cbdfd482a94c0f353f502435cfa333afd43dab05c5913ad7065eddbc0c5e84d1671447c3bf08f2fa6be1c1621d13267a2ea5d03",
+          "sha256": "fcc01fd81a2871c89b31c274dafa7434285a1ba8f64c9fa731a605678811451e",
+          "sha1": "8fe4e7dfc13f3c322e4087b4ea1e50dbaca32122",
+          "md5": "015260f28a4cb10232f1c5fada75f9d2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-midi-1.9.0-alpha01-sources.jar",
+          "url": "media3-exoplayer-midi-1.9.0-alpha01-sources.jar",
+          "size": 35031,
+          "sha512": "82d7ffaa92803bc552ceda7133ef1c9e0b731522e33cb23a4ba029c6e82c8fc9bad31cb0b9a69c3187f7779d0cbbfcf45ceafd1170b1cc7d3f1664017001f7eb",
+          "sha256": "aa8e634c056e92fe02d91450a61f8581c30a732ddbea5da33de3332ce993b7b1",
+          "sha1": "1e9de27757e7d8f242e77deb7d31db6bb046f8a3",
+          "md5": "c56eda58c73f3a2c7a6ca68dc0ff78bd"
+        }
+      ]
+    }
+  ]
+}

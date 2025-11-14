@@ -1,0 +1,145 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-effect",
+    "version": "1.9.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-alpha01.aar",
+          "url": "media3-effect-1.9.0-alpha01.aar",
+          "size": 328129,
+          "sha512": "0c8c29b31324697b689ab2d939548f5e2dd5ebe53724350b45602c1d61417cfce1a47e0e722facfb8898075aa53cb803d98d55680f6a26e1ef62027387c9f151",
+          "sha256": "623b57dc117f39f636199b916dadf4a9df0fb168056ce63c54adfcb054addd5c",
+          "sha1": "47a5deedc4ef1a0d11f0136adfb14e2e19bab534",
+          "md5": "6ecfb1b75f06eb38903634725faed890"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-alpha01.aar",
+          "url": "media3-effect-1.9.0-alpha01.aar",
+          "size": 328129,
+          "sha512": "0c8c29b31324697b689ab2d939548f5e2dd5ebe53724350b45602c1d61417cfce1a47e0e722facfb8898075aa53cb803d98d55680f6a26e1ef62027387c9f151",
+          "sha256": "623b57dc117f39f636199b916dadf4a9df0fb168056ce63c54adfcb054addd5c",
+          "sha1": "47a5deedc4ef1a0d11f0136adfb14e2e19bab534",
+          "md5": "6ecfb1b75f06eb38903634725faed890"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-alpha01-sources.jar",
+          "url": "media3-effect-1.9.0-alpha01-sources.jar",
+          "size": 216557,
+          "sha512": "e250baa928c26ec89a69f893dd3c3e280e0b3f7a68e19139fac425eea1fc531b248adecc877639f2694a750bf55a43308d27ba05f14113003bfb74655684e528",
+          "sha256": "032c476d6fcdffc3d058fdd936b47f5d03ed1d1751c8a12dcae9186e8ee00080",
+          "sha1": "5252f7da42a01490de3f2460c301f78dada542e4",
+          "md5": "326f58346c7bc5c62e598cd037072cbf"
+        }
+      ]
+    }
+  ]
+}

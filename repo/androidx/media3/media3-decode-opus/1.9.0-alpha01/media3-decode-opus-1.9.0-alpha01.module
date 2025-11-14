@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-decode-opus",
+    "version": "1.9.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-opus-1.9.0-alpha01.aar",
+          "url": "media3-decode-opus-1.9.0-alpha01.aar",
+          "size": 526529,
+          "sha512": "e4d90fdc424e5c44bf5a2cb8217d9b00fb3dc6bfc330e90d23d50773b0fa224c9e2e573e684fbf2f98a40a63567fe8069dfac2ba6d6f5e8aa5ede27d0adf816b",
+          "sha256": "6d593359a7ba0584b898cb6908917ae43400dca1773348f779d410bd8547ca8d",
+          "sha1": "59daa4e2e57e0f3191c0c2151d535b5b5528375c",
+          "md5": "6ce95e8a3aec108b02d4d03c90c15c42"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.9.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-opus-1.9.0-alpha01.aar",
+          "url": "media3-decode-opus-1.9.0-alpha01.aar",
+          "size": 526529,
+          "sha512": "e4d90fdc424e5c44bf5a2cb8217d9b00fb3dc6bfc330e90d23d50773b0fa224c9e2e573e684fbf2f98a40a63567fe8069dfac2ba6d6f5e8aa5ede27d0adf816b",
+          "sha256": "6d593359a7ba0584b898cb6908917ae43400dca1773348f779d410bd8547ca8d",
+          "sha1": "59daa4e2e57e0f3191c0c2151d535b5b5528375c",
+          "md5": "6ce95e8a3aec108b02d4d03c90c15c42"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-decode-opus-1.9.0-alpha01-sources.jar",
+          "url": "media3-decode-opus-1.9.0-alpha01-sources.jar",
+          "size": 9389,
+          "sha512": "6ae69bf27cf39f9adf1b371006f0deeb673a68a715eeb507df9eaa8ec54c11c59c43bbb1067bae8aa286d1592d7dfd3079f97e2bdfd2da19d55ba5ac0b022f38",
+          "sha256": "b69524f55a98cccab9866f181555e3a33c33cb748fc346367f44986975f0a756",
+          "sha1": "1e0f2d28519f5f68576ed03548c2b01aa7460903",
+          "md5": "909395e8d48ce820bb53a5eb4f96e8ee"
+        }
+      ]
+    }
+  ]
+}
