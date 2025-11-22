@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-effect",
+    "version": "1.9.0-beta01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-beta01"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-beta01.aar",
+          "url": "media3-effect-1.9.0-beta01.aar",
+          "size": 333836,
+          "sha512": "201aa2d04fa1c901781645dce0b19a95400b02e5153ac6206288f173386b4769bbc13d1e1ace8df8a63771737a4ad59f7c034608c67a9076fdcdf5afeb068b08",
+          "sha256": "83abe6d8a85a4384b83f2de83ad0fdec0cce29c9b652dd87367cf7da13f33e0f",
+          "sha1": "a0c0c7188a3ba341571a9790bdd660a9016fcd95",
+          "md5": "f352f4947dde6d034c9c55c659590c3f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.9.0-beta01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-guava",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.9.0-beta01"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-beta01.aar",
+          "url": "media3-effect-1.9.0-beta01.aar",
+          "size": 333836,
+          "sha512": "201aa2d04fa1c901781645dce0b19a95400b02e5153ac6206288f173386b4769bbc13d1e1ace8df8a63771737a4ad59f7c034608c67a9076fdcdf5afeb068b08",
+          "sha256": "83abe6d8a85a4384b83f2de83ad0fdec0cce29c9b652dd87367cf7da13f33e0f",
+          "sha1": "a0c0c7188a3ba341571a9790bdd660a9016fcd95",
+          "md5": "f352f4947dde6d034c9c55c659590c3f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.9.0-beta01-sources.jar",
+          "url": "media3-effect-1.9.0-beta01-sources.jar",
+          "size": 218085,
+          "sha512": "e086013be39279635cdc541ba0049d2f8f234e2f32d1ffc6885d7820fa553f609a4d22aaf7cf99c92ae8dec72994c00a0c35a43ce20da304ddb5490ae764efec",
+          "sha256": "f0e9bb21e849721ed7bd2c1a80f0daf2c3ad93b02be373f293c2efbd14dc6389",
+          "sha1": "606c94140d7afd4575d170db996197aa34b9804b",
+          "md5": "f4d1a4534b03e53d4fb852a98672471b"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-ima",
+    "version": "1.9.0-beta01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.38.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-beta01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0-beta01.aar",
+          "url": "media3-exoplayer-ima-1.9.0-beta01.aar",
+          "size": 104899,
+          "sha512": "6a42ec3e8cb6ebe4dd00826c712c66c521ea653cf571827e725e3aed1b8de8649f8ef463ec689c7664c736e7482a2cc333a62bf6ddcce0ba9185d1dba1c1ceb3",
+          "sha256": "6b2fb370b67b695f46b6784396753f8da0f1ec8486a20b346273569e4e9ec283",
+          "sha1": "60b3c9e69f72dee5b9005341d198a4cd4daa11fa",
+          "md5": "5551b2c9d9d910eecb14c0bf5a5b7001"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.38.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0-beta01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0-beta01.aar",
+          "url": "media3-exoplayer-ima-1.9.0-beta01.aar",
+          "size": 104899,
+          "sha512": "6a42ec3e8cb6ebe4dd00826c712c66c521ea653cf571827e725e3aed1b8de8649f8ef463ec689c7664c736e7482a2cc333a62bf6ddcce0ba9185d1dba1c1ceb3",
+          "sha256": "6b2fb370b67b695f46b6784396753f8da0f1ec8486a20b346273569e4e9ec283",
+          "sha1": "60b3c9e69f72dee5b9005341d198a4cd4daa11fa",
+          "md5": "5551b2c9d9d910eecb14c0bf5a5b7001"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0-beta01-sources.jar",
+          "url": "media3-exoplayer-ima-1.9.0-beta01-sources.jar",
+          "size": 50882,
+          "sha512": "f987edce90580a9136f98a5b22b5c659cb46ef60c8dce53917614aee0cfcfe01afdd18586bc6aa8c73b645d22cb925be4b9523a6204968cbc54c5e0d7b43849b",
+          "sha256": "0ee8d9240cdad6e8c490ecad9563396d6e6304c040d852c8ffd71a2ddf222841",
+          "sha1": "498fa98148c0cb1196b338aa0a618a83d9c7e4e9",
+          "md5": "ed13e967b1050e397b4964878cd00d9b"
+        }
+      ]
+    }
+  ]
+}
