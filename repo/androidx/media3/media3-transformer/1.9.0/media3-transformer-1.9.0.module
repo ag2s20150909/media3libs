@@ -1,0 +1,159 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-transformer",
+    "version": "1.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-muxer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-transformer-1.9.0.aar",
+          "url": "media3-transformer-1.9.0.aar",
+          "size": 409537,
+          "sha512": "53cb700bd69a6976c282c4f1a8328fb93d351a541c2d281a8fe6e39514a95f69cd3b2c2d9146c1a3b0ba776d1bae06d7598417402cd62f000edea583989aed8d",
+          "sha256": "937a91f4adcb0b99f0090fe3d8ad721dd0e518007d976d97bfed39b6a5089265",
+          "sha1": "729b89207e0ae7583428c05b253a00966b64e37e",
+          "md5": "1d0b3e5702d3ad3e8cf6e1dfe00c0142"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-container",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-inspector",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-muxer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-transformer-1.9.0.aar",
+          "url": "media3-transformer-1.9.0.aar",
+          "size": 409537,
+          "sha512": "53cb700bd69a6976c282c4f1a8328fb93d351a541c2d281a8fe6e39514a95f69cd3b2c2d9146c1a3b0ba776d1bae06d7598417402cd62f000edea583989aed8d",
+          "sha256": "937a91f4adcb0b99f0090fe3d8ad721dd0e518007d976d97bfed39b6a5089265",
+          "sha1": "729b89207e0ae7583428c05b253a00966b64e37e",
+          "md5": "1d0b3e5702d3ad3e8cf6e1dfe00c0142"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-transformer-1.9.0-sources.jar",
+          "url": "media3-transformer-1.9.0-sources.jar",
+          "size": 279263,
+          "sha512": "87f8d2be7cefff2429b6c96b5e19fb6d2f42b5c27bd7ad3bdb75f8c2f6d849617441a3e9b9eb2a4fb1f6b490e88f16f13408ee91c9dd715b50e7291cd1c9c563",
+          "sha256": "e933b1bf521711424f81fa9c484ad07876ea1b5e2d5d34c6ec2f11098739e4be",
+          "sha1": "49ff6d68a1aac06fd42d59a13cc3b4c6286a9915",
+          "md5": "948072183959e22e0bcfb29215c52329"
+        }
+      ]
+    }
+  ]
+}

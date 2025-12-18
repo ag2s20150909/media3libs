@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-ima",
+    "version": "1.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.38.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0.aar",
+          "url": "media3-exoplayer-ima-1.9.0.aar",
+          "size": 90171,
+          "sha512": "891a421fde7463d366fff80167f1b38a947b4d3bdfeccef18ac4ce6a1eacca5902f4dcad4eb164d0609b37eed2c8c6374ef75a976cfb8e8fe552204e8e05e03b",
+          "sha256": "ede658f61eda70630668f41c166eecb63a702cf6dbfb0c8548973e271de4989d",
+          "sha1": "0d513e6bb1cd6e5a71001249d3b1897b90eb869c",
+          "md5": "a67b00ffb5cf4860d17b85733082b163"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.38.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0.aar",
+          "url": "media3-exoplayer-ima-1.9.0.aar",
+          "size": 90171,
+          "sha512": "891a421fde7463d366fff80167f1b38a947b4d3bdfeccef18ac4ce6a1eacca5902f4dcad4eb164d0609b37eed2c8c6374ef75a976cfb8e8fe552204e8e05e03b",
+          "sha256": "ede658f61eda70630668f41c166eecb63a702cf6dbfb0c8548973e271de4989d",
+          "sha1": "0d513e6bb1cd6e5a71001249d3b1897b90eb869c",
+          "md5": "a67b00ffb5cf4860d17b85733082b163"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.9.0-sources.jar",
+          "url": "media3-exoplayer-ima-1.9.0-sources.jar",
+          "size": 50882,
+          "sha512": "f987edce90580a9136f98a5b22b5c659cb46ef60c8dce53917614aee0cfcfe01afdd18586bc6aa8c73b645d22cb925be4b9523a6204968cbc54c5e0d7b43849b",
+          "sha256": "0ee8d9240cdad6e8c490ecad9563396d6e6304c040d852c8ffd71a2ddf222841",
+          "sha1": "498fa98148c0cb1196b338aa0a618a83d9c7e4e9",
+          "md5": "ed13e967b1050e397b4964878cd00d9b"
+        }
+      ]
+    }
+  ]
+}
