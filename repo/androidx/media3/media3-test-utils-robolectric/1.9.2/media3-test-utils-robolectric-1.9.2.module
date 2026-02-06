@@ -1,0 +1,138 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-test-utils-robolectric",
+    "version": "1.9.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.2"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.9.2"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-test-utils",
+          "version": {
+            "requires": "1.9.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.9.2.aar",
+          "url": "media3-test-utils-robolectric-1.9.2.aar",
+          "size": 67038,
+          "sha512": "0bf4a3eaeff49be9bc38407e3fcc0332198d0e080d875bdb1cf79ce83c33b7c4565aebffe72c414f51869ac36247d3ae22a7243e1b1028b425fb58b28c1a1561",
+          "sha256": "f4b192af5da5316696f7b28d4562e1f205019a37ea8d0bf038b0efd1137ffb02",
+          "sha1": "ca8ee6e3f9f169b61d5f460fbd3d9f134ff3f80c",
+          "md5": "577fe027b7865dfbb35f9120ab14031d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "robolectric",
+          "version": {
+            "requires": "4.16"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.9.2"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.9.2"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-test-utils",
+          "version": {
+            "requires": "1.9.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.9.2.aar",
+          "url": "media3-test-utils-robolectric-1.9.2.aar",
+          "size": 67038,
+          "sha512": "0bf4a3eaeff49be9bc38407e3fcc0332198d0e080d875bdb1cf79ce83c33b7c4565aebffe72c414f51869ac36247d3ae22a7243e1b1028b425fb58b28c1a1561",
+          "sha256": "f4b192af5da5316696f7b28d4562e1f205019a37ea8d0bf038b0efd1137ffb02",
+          "sha1": "ca8ee6e3f9f169b61d5f460fbd3d9f134ff3f80c",
+          "md5": "577fe027b7865dfbb35f9120ab14031d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.9.2-sources.jar",
+          "url": "media3-test-utils-robolectric-1.9.2-sources.jar",
+          "size": 38510,
+          "sha512": "b2ac42cea1bb1fd3341ce907efcdbf99ee6f81788acd6d0ddc6a565bb56fd5a8cb74b835e0fff7768c369be22afa3a915c9a11a4e65e081b8ca55916c93ed38e",
+          "sha256": "86d6352db501a7f2295aada9a780064724773d0b76ce2458049ffd5422c3fdc0",
+          "sha1": "6f9383abc59b943a3249bbcc63dac6afb360d572",
+          "md5": "b67d9419aa3d367f5c41b375ac8f6d59"
+        }
+      ]
+    }
+  ]
+}
