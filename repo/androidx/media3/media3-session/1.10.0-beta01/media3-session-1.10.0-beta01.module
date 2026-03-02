@@ -1,0 +1,145 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-session",
+    "version": "1.10.0-beta01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-service",
+          "version": {
+            "requires": "2.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-session-1.10.0-beta01.aar",
+          "url": "media3-session-1.10.0-beta01.aar",
+          "size": 910506,
+          "sha512": "99b3b1dce20936c7564207a120c0de1a3056f19d6cb0d5d4d2c0c7133f17cf14513e6a99e85f6e57ea8123b07881201361e2b047b0433abf0aed00f927fc6fe1",
+          "sha256": "e8a2ba0f11461b6fc840c0d315e7c4ac20cd7cf9f983e2b048853d43b3942efc",
+          "sha1": "ed7e4b08855fd1f64027ec51a1ab5502020fe0e7",
+          "md5": "937f7bb041ee2f6868b8cf703889c202"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.collection",
+          "module": "collection",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-service",
+          "version": {
+            "requires": "2.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-session-1.10.0-beta01.aar",
+          "url": "media3-session-1.10.0-beta01.aar",
+          "size": 910506,
+          "sha512": "99b3b1dce20936c7564207a120c0de1a3056f19d6cb0d5d4d2c0c7133f17cf14513e6a99e85f6e57ea8123b07881201361e2b047b0433abf0aed00f927fc6fe1",
+          "sha256": "e8a2ba0f11461b6fc840c0d315e7c4ac20cd7cf9f983e2b048853d43b3942efc",
+          "sha1": "ed7e4b08855fd1f64027ec51a1ab5502020fe0e7",
+          "md5": "937f7bb041ee2f6868b8cf703889c202"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-session-1.10.0-beta01-sources.jar",
+          "url": "media3-session-1.10.0-beta01-sources.jar",
+          "size": 419167,
+          "sha512": "5e1ea18f2df229b0c9b3c3d8d35713bb79880f3a3eea75cb8fa04ace847a5daf77eaa0d7ab9a1f4cbce21f4f908d931b1be74e8a5ceba003f1c14364baf3f83c",
+          "sha256": "7d4a032d8a42064764e2f5360b28a67d5a272deb26fbb4852a50ad61a4503388",
+          "sha1": "6e1b82f3c3ee3cfa15e81021da3b57e36e43b220",
+          "md5": "e7347206256deaea4d15a28b0cf845b0"
+        }
+      ]
+    }
+  ]
+}

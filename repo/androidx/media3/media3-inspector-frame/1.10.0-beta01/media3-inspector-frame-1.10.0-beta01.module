@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-inspector-frame",
+    "version": "1.10.0-beta01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-inspector-frame-1.10.0-beta01.aar",
+          "url": "media3-inspector-frame-1.10.0-beta01.aar",
+          "size": 23496,
+          "sha512": "60c71b2144177d4dce8e1f3e4716da3a6fddab1e658b85d8468f934925efba7b646554d0d925bc3bdb1e1ad1269ab17aa4c93a13c197bf5e6ddccd3c60bea84a",
+          "sha256": "d494ad9e8f65825593c251330b3e09bc0a7be054c720a54962de54e9264684a7",
+          "sha1": "57f6a912c431b6aefadb6cd0e23e3494ee4c0478",
+          "md5": "905b220fd3bdff9f4474b57cb418e721"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.10.0-beta01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-inspector-frame-1.10.0-beta01.aar",
+          "url": "media3-inspector-frame-1.10.0-beta01.aar",
+          "size": 23496,
+          "sha512": "60c71b2144177d4dce8e1f3e4716da3a6fddab1e658b85d8468f934925efba7b646554d0d925bc3bdb1e1ad1269ab17aa4c93a13c197bf5e6ddccd3c60bea84a",
+          "sha256": "d494ad9e8f65825593c251330b3e09bc0a7be054c720a54962de54e9264684a7",
+          "sha1": "57f6a912c431b6aefadb6cd0e23e3494ee4c0478",
+          "md5": "905b220fd3bdff9f4474b57cb418e721"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-inspector-frame-1.10.0-beta01-sources.jar",
+          "url": "media3-inspector-frame-1.10.0-beta01-sources.jar",
+          "size": 12946,
+          "sha512": "84b93fb14b99e985c7b53d1554bc5b8ad3d48999beeeee0206c3ca7f76865e29d6c355a45ca1b16640814e4193f8263212c84d730a89ed5834ab37ba768b0b08",
+          "sha256": "7b899059bcbaebe9fcffe24f4ce0eefbd9ac6431c294d52184b9afa2cf972160",
+          "sha1": "95616d7faa375d3d22541fa6e6d807e76fee797e",
+          "md5": "8d0ba5fac1fe6863eaab148407570145"
+        }
+      ]
+    }
+  ]
+}
