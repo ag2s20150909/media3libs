@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-effect-lottie",
+    "version": "1.10.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-lottie-1.10.0.aar",
+          "url": "media3-effect-lottie-1.10.0.aar",
+          "size": 5647,
+          "sha512": "ab05ffb3b781846869cd2280f45bb35891f51145a55a074f261a32e65483b3cb84ca1846e406d1ab8240223c7919705c76ebbbb285efaa3b7a10484998b59420",
+          "sha256": "83b26f6f25e785b949263fc52cb7c0fb5f0e371445fa1d7b9a0ed0b71c05e69d",
+          "sha1": "343904350929991bd84a3f89f76698a5bbb171a0",
+          "md5": "0266fa0613d5e941ce750ec93a41e176"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-lottie-1.10.0.aar",
+          "url": "media3-effect-lottie-1.10.0.aar",
+          "size": 5647,
+          "sha512": "ab05ffb3b781846869cd2280f45bb35891f51145a55a074f261a32e65483b3cb84ca1846e406d1ab8240223c7919705c76ebbbb285efaa3b7a10484998b59420",
+          "sha256": "83b26f6f25e785b949263fc52cb7c0fb5f0e371445fa1d7b9a0ed0b71c05e69d",
+          "sha1": "343904350929991bd84a3f89f76698a5bbb171a0",
+          "md5": "0266fa0613d5e941ce750ec93a41e176"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-lottie-1.10.0-sources.jar",
+          "url": "media3-effect-lottie-1.10.0-sources.jar",
+          "size": 3977,
+          "sha512": "9cf3c5e94c89fee5145fcb74e26110f3cc55e946bbb1a5c756b2027e121e17479d368713c14e57e60387f94064c2d9a11261b8bb46aa31fad6818bddb477518e",
+          "sha256": "5352b09469f485270d44e5bcf264ff30d7bee757049e8c79553bdfe7f7ee6e60",
+          "sha1": "071f3d0bfc66849f2d1ade5a7a0b0f509c848a02",
+          "md5": "fe1a307728232daaf952516e37aef391"
+        }
+      ]
+    }
+  ]
+}

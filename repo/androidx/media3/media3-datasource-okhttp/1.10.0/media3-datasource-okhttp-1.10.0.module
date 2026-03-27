@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-datasource-okhttp",
+    "version": "1.10.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.10.0.aar",
+          "url": "media3-datasource-okhttp-1.10.0.aar",
+          "size": 9737,
+          "sha512": "8304afe24485f38c473180d3d47578a91427da971ecac8ef7c6e499cb850f1a28962fa5380149a18ed6f360b062a5c176f9e8aba80dfa8590993152e6febfc24",
+          "sha256": "b81c18faf12c7770c64c04a28e2facab6aab35b381225be3c133609f5037cfbb",
+          "sha1": "26314fce7d7a40cb3c69d88b18a56b141b3f160b",
+          "md5": "71bf883ad3d65851784fb9ebfc0ca4c6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-datasource",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.10.0.aar",
+          "url": "media3-datasource-okhttp-1.10.0.aar",
+          "size": 9737,
+          "sha512": "8304afe24485f38c473180d3d47578a91427da971ecac8ef7c6e499cb850f1a28962fa5380149a18ed6f360b062a5c176f9e8aba80dfa8590993152e6febfc24",
+          "sha256": "b81c18faf12c7770c64c04a28e2facab6aab35b381225be3c133609f5037cfbb",
+          "sha1": "26314fce7d7a40cb3c69d88b18a56b141b3f160b",
+          "md5": "71bf883ad3d65851784fb9ebfc0ca4c6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-datasource-okhttp-1.10.0-sources.jar",
+          "url": "media3-datasource-okhttp-1.10.0-sources.jar",
+          "size": 6266,
+          "sha512": "e32a4591d70abe03a48f1c6e80a71b2e40cbe45cfee466d14b984fcfe961e7e5e7c2e7d21c47e9c27dead6dec4c9881dd27329a50a72143006c54025fdd83af2",
+          "sha256": "b37ab13b234ce2007c489d27568aeb3b1d7169ff50a09317e866ab7e75f7acca",
+          "sha1": "6e13f003a88454fbce1d7586c5e9337db2942372",
+          "md5": "7b8243210daddf35205041ce4e39c5f2"
+        }
+      ]
+    }
+  ]
+}

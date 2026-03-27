@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-decode-flac",
+    "version": "1.10.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-flac-1.10.0.aar",
+          "url": "media3-decode-flac-1.10.0.aar",
+          "size": 578692,
+          "sha512": "0404c50451f62d023266e3f114c338716b9e878dc22070b9d58417dcd6d08afde094f21408cdd561febffb8b2b15890d76a04ed330bc82448f17798bb5549fb1",
+          "sha256": "97d7a98fa8499496943cc0b0c1111be13dba6e3029b0a55d92cd3abf2cd38a3b",
+          "sha1": "0cf87dd1ef745d163af061db1330549482404dcf",
+          "md5": "58fe65bc5596b9dcc0ebf6481fe199be"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decode-flac-1.10.0.aar",
+          "url": "media3-decode-flac-1.10.0.aar",
+          "size": 578692,
+          "sha512": "0404c50451f62d023266e3f114c338716b9e878dc22070b9d58417dcd6d08afde094f21408cdd561febffb8b2b15890d76a04ed330bc82448f17798bb5549fb1",
+          "sha256": "97d7a98fa8499496943cc0b0c1111be13dba6e3029b0a55d92cd3abf2cd38a3b",
+          "sha1": "0cf87dd1ef745d163af061db1330549482404dcf",
+          "md5": "58fe65bc5596b9dcc0ebf6481fe199be"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-decode-flac-1.10.0-sources.jar",
+          "url": "media3-decode-flac-1.10.0-sources.jar",
+          "size": 15748,
+          "sha512": "ace6d2a23a3ac31f89c72e99fa5e525e1dd02184583e2260ae39c102b8f3bbc891ae90e58e640e3e1a9bbc84511366521732ffe6edab21a47bb3ebc904e92e74",
+          "sha256": "636547d168b74eb6dde49727aa1b5430eb79b5b86cc77808dd9aaa44dfa948dc",
+          "sha1": "648f0d2d5ae45d632506a44abcc31d234c370b97",
+          "md5": "26cc69a7600a7b8a9561233647815276"
+        }
+      ]
+    }
+  ]
+}

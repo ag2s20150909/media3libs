@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-hls",
+    "version": "1.10.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-hls-1.10.0.aar",
+          "url": "media3-exoplayer-hls-1.10.0.aar",
+          "size": 239553,
+          "sha512": "f6093b3c2daa40a0b2a0cdddcb2918fcfdf4d7f8e14065a2669a566055061de72528a8cfc048e09f885b4dc25d7c9fa0230de65e3cfe6b7a4679f160c692587d",
+          "sha256": "10138e1c7c74821fb35068ebbe7e876d40bce7eba5188aca838a8cde6d2a56a1",
+          "sha1": "31169ad9c4f1505fc36dee87f4718fe60f4de9f1",
+          "md5": "fdf5dbcd343d45858bad39e4a3d4b091"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-hls-1.10.0.aar",
+          "url": "media3-exoplayer-hls-1.10.0.aar",
+          "size": 239553,
+          "sha512": "f6093b3c2daa40a0b2a0cdddcb2918fcfdf4d7f8e14065a2669a566055061de72528a8cfc048e09f885b4dc25d7c9fa0230de65e3cfe6b7a4679f160c692587d",
+          "sha256": "10138e1c7c74821fb35068ebbe7e876d40bce7eba5188aca838a8cde6d2a56a1",
+          "sha1": "31169ad9c4f1505fc36dee87f4718fe60f4de9f1",
+          "md5": "fdf5dbcd343d45858bad39e4a3d4b091"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-hls-1.10.0-sources.jar",
+          "url": "media3-exoplayer-hls-1.10.0-sources.jar",
+          "size": 161469,
+          "sha512": "f6ae3b6d394f8184499ae24a226a4ff88f123e76f1e8aa9b61688a672a912ce7453dd693fd524204820e2cb6ecebed06e44a37d722f8addbb0db02fd3f40af95",
+          "sha256": "67edda438e1d646195a3214e58d639757ebba229b7f4a589d2a10e511e580167",
+          "sha1": "5051154fd7aa58fa6a2e1e79d6ff6658fc5d00b3",
+          "md5": "d33d0fea3cb85dc0f5aa8c6686c1bbc8"
+        }
+      ]
+    }
+  ]
+}

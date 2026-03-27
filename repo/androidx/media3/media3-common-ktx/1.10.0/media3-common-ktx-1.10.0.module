@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-common-ktx",
+    "version": "1.10.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-common-ktx-1.10.0.aar",
+          "url": "media3-common-ktx-1.10.0.aar",
+          "size": 13279,
+          "sha512": "79645da7f7068b0f8b2ed88b3238c53e997dc8e5b7fd043bc30f4517d3ae9cdab90e773964090bfe6de53147b5a99720c7effbb80b0b969aa85b6b31575c3eb4",
+          "sha256": "2e137ee6422b3bba8862d29dc087c52763e023953b9e20df47822b0e2c8e6b52",
+          "sha1": "89c119438fe065244705ba267fa8a0322e4cbf44",
+          "md5": "b5a454020c0cf9ccf9884b9cdf5fe1d4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-common-ktx-1.10.0.aar",
+          "url": "media3-common-ktx-1.10.0.aar",
+          "size": 13279,
+          "sha512": "79645da7f7068b0f8b2ed88b3238c53e997dc8e5b7fd043bc30f4517d3ae9cdab90e773964090bfe6de53147b5a99720c7effbb80b0b969aa85b6b31575c3eb4",
+          "sha256": "2e137ee6422b3bba8862d29dc087c52763e023953b9e20df47822b0e2c8e6b52",
+          "sha1": "89c119438fe065244705ba267fa8a0322e4cbf44",
+          "md5": "b5a454020c0cf9ccf9884b9cdf5fe1d4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-common-ktx-1.10.0-sources.jar",
+          "url": "media3-common-ktx-1.10.0-sources.jar",
+          "size": 3082,
+          "sha512": "cf7962c71f514d2f85dead41513e8f719bc921fbc0d9e91d950d48a09748ebffd887f8763ba3a5d33d99e4f759863bdba13f7494a31f939c67bd3979f640d9a3",
+          "sha256": "1e12610cc5c19397aa3786d2b693fafe59fc0c9e097593c8d392b1afe4f3199e",
+          "sha1": "a1532fe9b8978557c352046727157c4160413889",
+          "md5": "9455f02576bfbf4e4a766dc8526d1473"
+        }
+      ]
+    }
+  ]
+}
