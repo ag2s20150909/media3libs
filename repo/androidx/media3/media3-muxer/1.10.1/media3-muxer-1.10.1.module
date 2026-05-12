@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-muxer",
+    "version": "1.10.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-muxer-1.10.1.aar",
+          "url": "media3-muxer-1.10.1.aar",
+          "size": 102277,
+          "sha512": "03f8a0390720487e68779aa020a9838482de6daf01ceaa742a70e6fd2b7302cbc20af2b4f5e66af8b4a7446afa03e4e9ac5bb3be1704378fbfa62f6239d90048",
+          "sha256": "45b563d420d0340263be652436cbd06da19d40d4bb9a0ded8256118730d0848a",
+          "sha1": "f91ab3b9aa180a198f762edc6ceceda8dff3f173",
+          "md5": "d3274e72f68c26a03bf64957b4a9918b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-container",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-muxer-1.10.1.aar",
+          "url": "media3-muxer-1.10.1.aar",
+          "size": 102277,
+          "sha512": "03f8a0390720487e68779aa020a9838482de6daf01ceaa742a70e6fd2b7302cbc20af2b4f5e66af8b4a7446afa03e4e9ac5bb3be1704378fbfa62f6239d90048",
+          "sha256": "45b563d420d0340263be652436cbd06da19d40d4bb9a0ded8256118730d0848a",
+          "sha1": "f91ab3b9aa180a198f762edc6ceceda8dff3f173",
+          "md5": "d3274e72f68c26a03bf64957b4a9918b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-muxer-1.10.1-sources.jar",
+          "url": "media3-muxer-1.10.1-sources.jar",
+          "size": 87866,
+          "sha512": "285c420c0532cc37a13c44091fa99d4354cda498418818544ad62f124ac228cc44c49828ef3348239edee4602ab8df4d6abc36fcacf7e6efc3ba6dc33b1380c5",
+          "sha256": "73355f0df4d3ad4fa1ab1cd08de172c7c9c61b52482de78e715b27bc83b63691",
+          "sha1": "e00c4992ec1f9e94d075c9ba6f6eee46a0bacc79",
+          "md5": "5a08cc7623fcb4a5f29f34063da060a4"
+        }
+      ]
+    }
+  ]
+}
