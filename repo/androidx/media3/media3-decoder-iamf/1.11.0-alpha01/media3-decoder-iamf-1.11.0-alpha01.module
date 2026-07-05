@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-decoder-iamf",
+    "version": "1.11.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decoder-iamf-1.11.0-alpha01.aar",
+          "url": "media3-decoder-iamf-1.11.0-alpha01.aar",
+          "size": 11926979,
+          "sha512": "9f794302cfc64729f75ac11650f417287431e9b75fe08ff42cc996bb132d59eb1611ad801c2f2e3592acf38e09b456f09e5ff7aa285446e7851b7f6505e25d7d",
+          "sha256": "ab7f09a8d435da8a471f7efe9592c205d70b27e00e0e29bf9a0b2fd88e8d0764",
+          "sha1": "7623d89a8ab78152826a1d933040aeaafd63bd7d",
+          "md5": "979ea5e54bde348065630d881822bd90"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-decoder",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-decoder-iamf-1.11.0-alpha01.aar",
+          "url": "media3-decoder-iamf-1.11.0-alpha01.aar",
+          "size": 11926979,
+          "sha512": "9f794302cfc64729f75ac11650f417287431e9b75fe08ff42cc996bb132d59eb1611ad801c2f2e3592acf38e09b456f09e5ff7aa285446e7851b7f6505e25d7d",
+          "sha256": "ab7f09a8d435da8a471f7efe9592c205d70b27e00e0e29bf9a0b2fd88e8d0764",
+          "sha1": "7623d89a8ab78152826a1d933040aeaafd63bd7d",
+          "md5": "979ea5e54bde348065630d881822bd90"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-decoder-iamf-1.11.0-alpha01-sources.jar",
+          "url": "media3-decoder-iamf-1.11.0-alpha01-sources.jar",
+          "size": 10758,
+          "sha512": "bf4053afe46ac7845d77d22320a36467b52c662399257f8915f20e94cebd8349897d14ce5e04e56107c0238f046d01d2fcf418185ea6ead35c5e6598024a9cd4",
+          "sha256": "cf31c3a765727b532bc2c39a2a0cc76f41c97cef233e220cddef602071d5c269",
+          "sha1": "4771b9824ec8370593991b2405539d2cb669df8d",
+          "md5": "309a4e033b9bc384fab0cc46f3364800"
+        }
+      ]
+    }
+  ]
+}

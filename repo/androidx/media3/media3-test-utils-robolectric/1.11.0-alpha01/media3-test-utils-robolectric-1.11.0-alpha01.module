@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-test-utils-robolectric",
+    "version": "1.11.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-test-utils",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.11.0-alpha01.aar",
+          "url": "media3-test-utils-robolectric-1.11.0-alpha01.aar",
+          "size": 69893,
+          "sha512": "2c367eb793214766f4442ee639ca638c1219465c27c4f2a32adbfbf64b292e9b24306694784f56696099bc9d27af3c9e463b696218afcb1b9f0f93b14ac92405",
+          "sha256": "45e1531a457e8e29f2f8d8cccc7c486abd6fba487bdd38eb19bdf0f97048edb6",
+          "sha1": "747e766d0494486881922f02800577f7f9a22d47",
+          "md5": "d486cc5fa64a72ac5f178a423218e69f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "robolectric",
+          "version": {
+            "requires": "4.16"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-transformer",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-test-utils",
+          "version": {
+            "requires": "1.11.0-alpha01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.11.0-alpha01.aar",
+          "url": "media3-test-utils-robolectric-1.11.0-alpha01.aar",
+          "size": 69893,
+          "sha512": "2c367eb793214766f4442ee639ca638c1219465c27c4f2a32adbfbf64b292e9b24306694784f56696099bc9d27af3c9e463b696218afcb1b9f0f93b14ac92405",
+          "sha256": "45e1531a457e8e29f2f8d8cccc7c486abd6fba487bdd38eb19bdf0f97048edb6",
+          "sha1": "747e766d0494486881922f02800577f7f9a22d47",
+          "md5": "d486cc5fa64a72ac5f178a423218e69f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-test-utils-robolectric-1.11.0-alpha01-sources.jar",
+          "url": "media3-test-utils-robolectric-1.11.0-alpha01-sources.jar",
+          "size": 39436,
+          "sha512": "a6d14464f6f0200b1ccc0088bdddbf5783800b7162eacb5c1e3084ab5ce683bc54925292307931e18cad019c9e334b6c5fd80e019350b1a77f78b2d67f391c3f",
+          "sha256": "637dd43484d931f95264fcf2d862f493b9d3e0f3d408f90c8847bc46004025a8",
+          "sha1": "fc98837fecd3015e8b3894e48b615b5e01d5dbdf",
+          "md5": "300dc358e92ef1b6c9cb60c7000afa6b"
+        }
+      ]
+    }
+  ]
+}
