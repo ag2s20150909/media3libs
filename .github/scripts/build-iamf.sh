@@ -19,19 +19,8 @@ cd "${IAMF_MODULE_PATH}/jni"
 
 ## Enable publishing
 
-echo "
-android {
-    namespace 'androidx.media3.decoder.iamf'
-
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
-}
-ext {
-     releaseArtifactId = 'media3-decode-iamf'
-     releaseName = 'Media3 iamf module'
-     }
-     apply from: '../../publish.gradle'
-">>"${GD_PATH}"
+if [[ -f "$GD_PATH" ]]; then
+    echo "apply from: '../../publish.gradle'">>"${GD_PATH}"
+else
+    echo 'apply(plugin = "media3.publish")'>>"${GD_PATH}.kts"
+fi

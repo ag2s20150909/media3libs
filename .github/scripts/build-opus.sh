@@ -12,19 +12,9 @@ cd "${OPUS_MODULE_PATH}/jni"
 git clone --depth=1 https://gitlab.xiph.org/xiph/opus.git libopus
 
 ## Enable publishing
-echo "
-android {
-    namespace 'androidx.media3.decoder.opus'
 
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
-}
-ext {
-     releaseArtifactId = 'media3-decode-opus'
-     releaseName = 'Media3 opus module'
-     }
-     apply from: '../../publish.gradle'
-">>"${GD_PATH}"
+if [[ -f "$GD_PATH" ]]; then
+    echo "apply from: '../../publish.gradle'">>"${GD_PATH}"
+else
+    echo 'apply(plugin = "media3.publish")'>>"${GD_PATH}.kts"
+fi

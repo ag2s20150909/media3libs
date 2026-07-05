@@ -16,19 +16,8 @@ git clone --depth=1  https://github.com/xiph/flac.git libflac
 
 ## Enable publishing
 
-echo "
-android {
-    namespace 'androidx.media3.decoder.flac'
-
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
-}
-ext {
-     releaseArtifactId = 'media3-decode-flac'
-     releaseName = 'Media3 flac module'
-     }
-     apply from: '../../publish.gradle'
-">>"${GD_PATH}"
+if [[ -f "$GD_PATH" ]]; then
+    echo "apply from: '../../publish.gradle'">>"${GD_PATH}"
+else
+    echo 'apply(plugin = "media3.publish")'>>"${GD_PATH}.kts"
+fi
