@@ -1,0 +1,173 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-cast",
+    "version": "1.11.0-beta01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "22.3.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.11.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-beta01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-cast-1.11.0-beta01.aar",
+          "url": "media3-cast-1.11.0-beta01.aar",
+          "size": 119404,
+          "sha512": "73b95aa52212ee836311c5e9b38c78bbcd968fe1df06a925168c3fcf9aa7806bb90b1d62eca4431a051ece82ac9893b0a4c574c36c95820afe037ce73c8f2682",
+          "sha256": "f92feafce1e09ad6084d6425b24c2f3b240cf26a9a34c37cf25b46a89f25d358",
+          "sha1": "324ecd889a1039bfc89018f3a38e7ee682f69f00",
+          "md5": "7dfb7582634620fc09b7c294b16d599f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.mediarouter",
+          "module": "mediarouter",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.05.00"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "22.3.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.11.0-beta01"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-beta01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-cast-1.11.0-beta01.aar",
+          "url": "media3-cast-1.11.0-beta01.aar",
+          "size": 119404,
+          "sha512": "73b95aa52212ee836311c5e9b38c78bbcd968fe1df06a925168c3fcf9aa7806bb90b1d62eca4431a051ece82ac9893b0a4c574c36c95820afe037ce73c8f2682",
+          "sha256": "f92feafce1e09ad6084d6425b24c2f3b240cf26a9a34c37cf25b46a89f25d358",
+          "sha1": "324ecd889a1039bfc89018f3a38e7ee682f69f00",
+          "md5": "7dfb7582634620fc09b7c294b16d599f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-cast-1.11.0-beta01-sources.jar",
+          "url": "media3-cast-1.11.0-beta01-sources.jar",
+          "size": 59831,
+          "sha512": "fc2444b20dc4ec388f51affd19d627df8900f25d74e668ae2d5b864932634f3a6cc707d5801454ff5208206de520cabfb606f26aa0443b40d941018e6898dee5",
+          "sha256": "66cfe550447e6b9ae74d9206a8cd806ae6d6fe4efc7165cf55f96943a3a62656",
+          "sha1": "6c8c61a5475a1a22af71e8db55d256fdfa6aaa19",
+          "md5": "66d130df18faa54185de2334e64198a6"
+        }
+      ]
+    }
+  ]
+}
