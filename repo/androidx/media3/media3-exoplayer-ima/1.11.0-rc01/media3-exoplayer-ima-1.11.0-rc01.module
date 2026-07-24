@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-ima",
+    "version": "1.11.0-rc01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.39.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-rc01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0-rc01.aar",
+          "url": "media3-exoplayer-ima-1.11.0-rc01.aar",
+          "size": 93290,
+          "sha512": "cee55777aaf3bf1a820d02db5ce8b6c683e1dabb21ace021119091606fa069456e8ab0a3a388f6890ed34b58f27f31506a718a95abb855e784245d89861ba61b",
+          "sha256": "96f5b9819d8b231f104bb10565f4e9a74423f4f2dd1d862c01374ae9a6889b6f",
+          "sha1": "01e5d383a0f1a2a35bf90f9e03ba42c926c44153",
+          "md5": "cea87e0d032cafccf0f67c27998b2281"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.39.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0-rc01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0-rc01.aar",
+          "url": "media3-exoplayer-ima-1.11.0-rc01.aar",
+          "size": 93290,
+          "sha512": "cee55777aaf3bf1a820d02db5ce8b6c683e1dabb21ace021119091606fa069456e8ab0a3a388f6890ed34b58f27f31506a718a95abb855e784245d89861ba61b",
+          "sha256": "96f5b9819d8b231f104bb10565f4e9a74423f4f2dd1d862c01374ae9a6889b6f",
+          "sha1": "01e5d383a0f1a2a35bf90f9e03ba42c926c44153",
+          "md5": "cea87e0d032cafccf0f67c27998b2281"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0-rc01-sources.jar",
+          "url": "media3-exoplayer-ima-1.11.0-rc01-sources.jar",
+          "size": 53770,
+          "sha512": "0199f79373a6b94dd34f94365e7938cf99102c415779c0e619233841cf79d080eabeed526064e3dfc3cabf091adf3bd56319ee9f7a57fa9b3753db4559913a4e",
+          "sha256": "821a1d0b857b1dcdba3f23f09671733ca6d3a67b59cde26c1638d9acd47c6f63",
+          "sha1": "1091f92f769bad6e4c536c852572b25e72e37939",
+          "md5": "34dbc2663d12d7437f9a6b2cf9bdc5a6"
+        }
+      ]
+    }
+  ]
+}
