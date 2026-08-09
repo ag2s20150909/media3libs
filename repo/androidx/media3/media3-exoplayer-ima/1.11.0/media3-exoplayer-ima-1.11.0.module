@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.media3",
+    "module": "media3-exoplayer-ima",
+    "version": "1.11.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.39.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0.aar",
+          "url": "media3-exoplayer-ima-1.11.0.aar",
+          "size": 93285,
+          "sha512": "a55abf5d5739af3c7a2978ba41174491802450a9d6e8a0ae3b6755b822ea5abfc55d2830834983a2b40e75f712c0e4ef41e731ed936b8a195a44693d60f18a7d",
+          "sha256": "3fae84bb4203c5f3fb7a9cd98aab08f71effae10d9eb9a0b35e30fa10e02d3cc",
+          "sha1": "92015089344c0b436669ff83e0a793e910380f49",
+          "md5": "5f24bdcbde01730f184312f71fa26a50"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "com.google.ads.interactivemedia.v3",
+          "module": "interactivemedia",
+          "version": {
+            "requires": "3.39.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.media3",
+              "module": "media3-common"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0.aar",
+          "url": "media3-exoplayer-ima-1.11.0.aar",
+          "size": 93285,
+          "sha512": "a55abf5d5739af3c7a2978ba41174491802450a9d6e8a0ae3b6755b822ea5abfc55d2830834983a2b40e75f712c0e4ef41e731ed936b8a195a44693d60f18a7d",
+          "sha256": "3fae84bb4203c5f3fb7a9cd98aab08f71effae10d9eb9a0b35e30fa10e02d3cc",
+          "sha1": "92015089344c0b436669ff83e0a793e910380f49",
+          "md5": "5f24bdcbde01730f184312f71fa26a50"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-exoplayer-ima-1.11.0-sources.jar",
+          "url": "media3-exoplayer-ima-1.11.0-sources.jar",
+          "size": 53770,
+          "sha512": "0199f79373a6b94dd34f94365e7938cf99102c415779c0e619233841cf79d080eabeed526064e3dfc3cabf091adf3bd56319ee9f7a57fa9b3753db4559913a4e",
+          "sha256": "821a1d0b857b1dcdba3f23f09671733ca6d3a67b59cde26c1638d9acd47c6f63",
+          "sha1": "1091f92f769bad6e4c536c852572b25e72e37939",
+          "md5": "34dbc2663d12d7437f9a6b2cf9bdc5a6"
+        }
+      ]
+    }
+  ]
+}
